@@ -1,0 +1,22 @@
+main_menu:
+  - name: Work
+  - name: About
+    active: true
+  - name: Clients
+  - name: Thinking
+  - name: News
+  - name: Contact
+
+footer_first:
+  - name: Work
+  - name: About
+  - name: Clients
+  - name: Thinking
+  - name: News
+
+footer_second:
+  - name: Awards
+  - name: Press
+  - name: Join
+  - name: Contact
+  - name: Legal

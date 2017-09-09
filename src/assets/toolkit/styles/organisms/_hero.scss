@@ -1,0 +1,23 @@
+
+.hero {
+	@include grid-row();
+	position: relative;
+	padding-top: 56%;
+	min-height: 300px;
+}
+
+.hero__column {
+	@include grid-col(12);
+}
+
+.hero__container {
+	@include scut-absolute(0 rem-calc(15) 0 rem-calc(15));
+	background-image: url('../images/test.png');
+	background-size: cover;
+	background-position: center;
+}
+
+.hero__content {
+	@include scut-center-transform(y);
+	margin-left: 5%;
+}

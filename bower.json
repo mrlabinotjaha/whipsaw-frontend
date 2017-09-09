@@ -1,0 +1,30 @@
+{
+  "name": "fabricator",
+  "description": "A tool for building website UI toolkits",
+  "main": "README.md",
+  "authors": [
+    "Luke Askew"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "toolkit",
+    "styleguide",
+    "framework",
+    "scaffold",
+    "patterns",
+    "library"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "foundation-sites": "^6.4.1",
+    "Scut": "scut#^1.4.0",
+    "jquery": "^3.2.1"
+  }
+}

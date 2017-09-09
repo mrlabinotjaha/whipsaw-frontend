@@ -1,0 +1,30 @@
+featured_items:
+  - image: "ProductFeaturedItem1.jpg" 
+    company: "Blumio" 
+    title: "Blood Pressure Monitor" 
+    text: "Blumio uses digital radar technology instead of the conventional air pump cuff. Bouncing radar waves off of arteries offers many advantages."
+  - image: "ProductFeaturedItem2.jpg" 
+    company: "Google" 
+    title: "WiFi Router" 
+    text: "WiFi is a mesh router (multiple linked routers) used to get a strong Wi-Fi signal in every corner of your house, paired with OnHub."
+    right: true
+  - image: "ProductFeaturedItem3.jpg" 
+    company: "Arris" 
+    title: "Hub. X Router" 
+    text: "Blumio uses digital radar technology instead of the conventional air pump cuff. Bouncing radar waves off of arteries offers many advantages."
+
+thinking_item_big:
+  category: "Thinking"
+  title: "The Neato brand story"
+  text: "Say goodbye to pain and reclaim your life with VIVY, a new generation wearable for pain relief and increased joint mobility. Designed by Whipsaw, VIVY launched its IndieGoGo campaign on February 29, 2016. ..."
+
+news: 
+  - image: ProjectHero.jpg
+    category: Client Launch 
+    title: Introducing VIVY pain therapy device
+  - image: NewsBig.jpg
+    category: Award 
+    title: Whipsaw takes home two gold awards at IDEA, 2016
+  - image: ProjectHero.jpg
+    category: Award 
+    title: Fast Company selects Harden as one of the “100 Most Creative People in Business 2014”

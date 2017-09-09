@@ -1,0 +1,28 @@
+
+@each $color-name, $color-value in $colors {
+
+	.color {
+		&-#{"" + $color-name} {
+			color: $color-value !important;
+		}
+	}
+
+	.background {
+		&-#{"" + $color-name} {
+			background-color: $color-value !important;
+		}
+	}
+
+	.button {
+		&.#{"" + $color-name} {
+			background-color: $color-value !important;
+		}
+	}
+
+	.border {
+		&-#{"" + $color-name} {
+			border-color: $color-value !important;
+		}
+	}
+	
+}

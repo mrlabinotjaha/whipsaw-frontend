@@ -1,0 +1,76 @@
+////
+/// Color function
+////
+
+/// Return a color from the color map.
+///
+/// @example scss - SCSS
+///   background-color: color(white);
+///
+/// @example css - CSS
+///   background-color: #fff;
+///
+/// @requires {variable} $colors
+
+@function color($color, $palette: ()) {
+  // First, we marge this default color palette with the cornerstone color palette we set up in `variables/color`
+  $_default-color-palette: map-merge((
+    // Branded color palette
+      primary:                      #0071bc,
+      primary-darker:               #205493,
+      primary-darkest:              #112e51,
+      primary-alt-dark:             #02bfe7,
+      primary-alt-darker:           #00a6d2,
+      primary-alt-darkest:          #046b99,
+      primary-alt-light:            #9bdaf1,
+      primary-alt-lightest:         #e1f3f8,
+      secondary:                    #e31c3d,
+      secondary-dark:               #cd2026,
+      secondary-darkest:            #981b1e,
+      secondary-light:              #e59393,
+      secondary-lightest:           #f9dede,
+
+    // Base color palette
+    // 
+
+      white:                        #ffffff,
+      base:                         #212121,
+      black:                        #000000,
+      grey:                         #5b616b,
+      grey-dark:                    #323a45,
+      grey-medium:                  #757575,
+      grey-light:                   #aeb0b5,
+      grey-lighter:                 #d6d7d9,
+      grey-lightest:                #f1f1f1,
+      gold:                         #fdb81e,
+      gold-light:                   #f9c642,
+      gold-lighter:                 #fad980,
+      gold-lightest:                #fff1d2,
+      green:                        #2e8540,
+      green-light:                  #4aa564,
+      green-lighter:                #94bfa2,
+      green-lightest:               #e7f4e4,
+      blue:                         #205493,
+      blue-light:                   #4773aa,
+      blue-lighter:                 #8ba6ca,
+      blue-lightest:                #dce4ef,
+
+    // Functional color palette
+    // 
+
+      focus:                        #3e94cf,
+      visited:                      #4c2c92,
+      shadow:                rgba(#000, 0.3),
+  ), $colors);
+
+  // Then, we merge the $_default-color-palette we just merged with the palette that was specified by the mixin.
+  $_color-palette: map-merge($_default-color-palette, $palette);
+
+  // Finally, we return the requested color value from our combined merge. This allows custom color maps to be able to
+  // only specify colors that we want to specifically differ from the base map.
+  // As an example, the cornerstone color map does not include any of the generic colors, but if I created a custom map
+  // that only had a `background: #880000` value, I could still call `color: color(brand, $custom-map)`, which
+  // would return the brand value from the `$colors` map. Additionally, if I call `color: color(lime, $custom-map)`
+  // it will return the lime color from the generic palette from the default map.
+  @return map-get($_color-palette, $color);
+}

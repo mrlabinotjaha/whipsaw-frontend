@@ -1,0 +1,16 @@
+<header class="header">
+	<div class="header__brand">
+		<div class="header__logo">
+			{{> logo }}
+		</div>
+	</div>
+	<div class="header__navigation">
+		<input class="header__menu-toggle" type="checkbox" id="menu-toggle">
+		<label class="header__menu-toggle-button" for="menu-toggle">
+			<span></span>
+			<span></span>
+			<span></span>
+		</label>
+		{{> menu classes="header__menu" items=global.main_menu }}
+	</div>
+</header>

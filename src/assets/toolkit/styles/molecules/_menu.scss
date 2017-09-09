@@ -1,0 +1,29 @@
+
+.menu {
+	@include scut-relative(-3px n n n);
+	font-weight: bold;
+	font-size: rem-calc(20);
+}
+
+.menu__item {
+	@include scut-padding(n rem-calc(19));
+
+	@include breakpoint(large down) {
+		@include scut-padding(n rem-calc(10));
+	}
+	
+	&:last-child {
+		@include scut-padding(n 0 n n);
+	}
+}
+
+.menu__item a {
+	@include scut-padding(n rem-calc(3));
+	color: $black;
+	text-transform: uppercase;
+}
+
+.menu__item--active a {
+	color: color(primary);
+	border-bottom: 5px solid color(primary);
+}

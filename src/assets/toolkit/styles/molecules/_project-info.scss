@@ -1,0 +1,80 @@
+
+.project-info {
+	
+}
+
+.project-info__category {
+	font-weight: bold;
+	font-size: rem-calc(20);
+	text-transform: uppercase;
+	margin-bottom: rem-calc(25);
+}
+
+.project-info__title {
+	font-size: rem-calc(50);
+	margin-bottom: rem-calc(20);
+
+	@include breakpoint(xlarge down) {
+		font-size: rem-calc(45);
+	}
+	@include breakpoint(large down) {
+		font-size: rem-calc(40);
+	}
+	@include breakpoint(medium down) {
+		font-size: rem-calc(35);
+	}
+	@include breakpoint(small only) {
+		font-size: rem-calc(30);
+	}
+}
+
+.project-info__company {
+	font-weight: bold;
+	&:after {
+		content: ' ';
+	}
+}
+
+.project-info__text {
+	font-size: rem-calc(28);
+	line-height: 1.36;
+
+	@include breakpoint(xlarge down) {
+		font-size: rem-calc(26);
+	}
+	@include breakpoint(large down) {
+		font-size: rem-calc(24);
+	}
+	@include breakpoint(medium down) {
+		font-size: rem-calc(22);
+	}
+	@include breakpoint(small only) {
+		font-size: rem-calc(20);
+	}
+}
+
+.project-info__text--big {
+	font-size: rem-calc(50);
+	line-height: 1.16;
+
+	@include breakpoint(xlarge down) {
+		font-size: rem-calc(45);
+	}
+	@include breakpoint(large down) {
+		font-size: rem-calc(40);
+	}
+	@include breakpoint(medium down) {
+		font-size: rem-calc(35);
+	}
+	@include breakpoint(small only) {
+		font-size: rem-calc(30);
+	}
+}
+
+.project-info--light {
+	color: $white;
+
+	.project-info__text {
+		color: #9e9f9f;
+	}
+}

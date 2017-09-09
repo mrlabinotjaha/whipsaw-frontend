@@ -1,0 +1,9 @@
+<div class="featured-item {{#if right}}featured-item--right{{/if}}">
+	<div class="featured-item__image">
+		<img src="{{ image ( default image 'ProductFeaturedItem1.jpg' ) }}">
+	</div>
+	<div class="featured-item__content">
+		{{> project-info category=category company=company title=title text=text big-text=big-text light=light }}
+	</div>
+</div>
+ 

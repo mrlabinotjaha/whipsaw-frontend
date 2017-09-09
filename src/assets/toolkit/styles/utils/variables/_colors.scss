@@ -1,0 +1,23 @@
+////
+/// Colors
+////
+
+/// This variable is a sass map that overrides our generic color map.
+/// Use this to define your project's color palette.
+///
+
+$colors: (
+    primary:                      #e80200,
+    primary-darker:               #004991,
+    primary-darkest:              #112e51,
+    primary-alt-dark:             #005ddc,
+    primary-alt-darker:           #005ddc,
+    primary-alt-darkest:          #005ddc,
+    primary-alt-light:            #005ddc,
+    primary-alt-lightest:         #005ddc,
+    secondary:                    #fff,
+    secondary-dark:               #ddd,
+    secondary-darkest:            #999,
+    secondary-light:              #112,
+    secondary-lightest:           #808080,
+) !default;

@@ -1,0 +1,10 @@
+
+.small-blocks {
+	@include grid-row();
+	margin-top: 10vw;
+
+
+	@include breakpoint(small only) {
+		margin-top: 14vw;
+	}
+}

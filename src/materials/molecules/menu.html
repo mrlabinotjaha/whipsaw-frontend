@@ -1,0 +1,7 @@
+<ul class="menu {{classes}}">
+	{{#each items }}
+	<li class="menu__item {{#if this.active}}menu__item--active{{/if}}">
+		<a href="#">{{this.name}}</a>
+	</li>
+	{{/each}}
+</ul>
