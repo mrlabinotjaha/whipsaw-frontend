@@ -9,10 +9,10 @@ cd $DIST
 git init
 appname="$1"
 if [ $appname ]; then
-  app="hopelab-pattern-library-$appname"
+  app="whipsaw-frontend-$appname"
   heroku create $app
 else
-  app="hopelab-pattern-library"
+  app="whipsaw-frontend"
 fi
 echo '{
   "require": {
