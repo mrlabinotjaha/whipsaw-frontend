@@ -1,0 +1,83 @@
+
+.horizontal-block {
+	@include grid-row();
+	@include scut-margin(n n rem-calc(140) n);
+
+	&:last-child {
+		@include scut-margin(n n rem-calc(0) n);
+	}
+}
+
+.horizontal-block__image-column {
+	@include grid-col(6);
+	padding-right: rem-calc(40) !important;
+
+	@include breakpoint(medium down) {
+		@include grid-col(12);
+	}
+}
+
+.horizontal-block__image {
+	padding-top: 56%;
+	background-image: url('../images/Thinking1.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.horizontal-block__details{
+	@include scut-margin(10vh n n n);
+	@include grid-col(6);
+	padding-left: rem-calc(40) !important;
+
+	@include breakpoint(xlarge down) {
+		@include scut-margin(5vh n n n);
+	}
+	@include breakpoint(large down) {
+		@include scut-margin(3vh n n n);
+	}
+	@include breakpoint(medium down) {
+		@include grid-col(12);
+		padding-left: rem-calc(15) !important;
+	}
+	@include breakpoint(small only) {
+	}
+}
+
+.horizontal-block__title {
+	@include scut-margin(n n rem-calc(40) n);
+	font-size: rem-calc(50);
+	font-weight: bold;
+	line-height: 1.1;
+
+	@include breakpoint(xlarge down) {
+		font-size: rem-calc(40);
+	}
+	@include breakpoint(large down) {
+		font-size: rem-calc(30);
+	}
+	@include breakpoint(medium down) {
+		font-size: rem-calc(35);
+	}
+	@include breakpoint(small only) {
+		font-size: rem-calc(30);
+	}
+}
+
+.horizontal-block__text {
+	font-size: rem-calc(28);
+	line-height: 1.36;
+	text-align: left;
+
+	@include breakpoint(xlarge down) {
+		font-size: rem-calc(24);
+	}
+	@include breakpoint(large down) {
+		font-size: rem-calc(20);
+	}
+	@include breakpoint(medium down) {
+		font-size: rem-calc(22);
+	}
+	@include breakpoint(small only) {
+		font-size: rem-calc(20);
+	}
+}

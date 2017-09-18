@@ -42,5 +42,5 @@ echo 'web: vendor/bin/heroku-php-nginx' > Procfile
 echo 'vendor' > .gitignore
 git remote add $app https://git.heroku.com/$app.git
 git add .
-git commit -am 'Deploying latest HopeLab Pattern Library to heroku'
+git commit -am 'Deploying latest Whipsaw Pattern Library to heroku'
 git push --force $app master

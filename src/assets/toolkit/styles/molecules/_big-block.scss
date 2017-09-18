@@ -1,6 +1,7 @@
 
 .big-block {
-
+	@include grid-row();
+	margin-bottom: 10vw;
 }
 
 .big-block__image {
