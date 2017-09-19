@@ -1,12 +1,14 @@
 
 .leader {
 	@include grid-row();
+	@include scut-relative();
 }
 
 .leader__text {
 	@include grid-col(12);
 
 	@include scut-margin( 12vw n );
+	float: initial;
 	font-size: rem-calc(80);
 	line-height: 1.1em;
 
@@ -30,5 +32,8 @@
 }
 
 .leader__image {
-	
+	background-image: url('../images/ThinkingBig.jpg');
+	background-size: cover;
+	background-position: center; 
+	padding-top: 48%;
 }
