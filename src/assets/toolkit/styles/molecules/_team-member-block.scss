@@ -1,0 +1,28 @@
+
+.team-member-block {
+	@include grid-col(4);
+	@include scut-margin(n n rem-calc(100) n);
+}
+
+.team-member-block__image {
+	@include scut-margin(n n rem-calc(50) n);
+	background-image: url('../images/TeamMemberBig.jpg');
+	background-size: cover;
+	background-position: center; 
+	padding-top: 86%;
+}
+
+.team-member-block__details {
+	font-size: rem-calc(30);
+	line-height: 1.17;
+	color: color(black);
+}
+
+.team-member-block__name {
+	@include scut-margin(n n rem-calc(10) n);
+	font-weight: bold;
+}
+
+.team-member-block__position {
+
+}

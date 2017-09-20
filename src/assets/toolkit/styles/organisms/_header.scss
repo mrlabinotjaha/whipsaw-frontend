@@ -2,6 +2,7 @@
 .header {
 	@include grid-row();
 	margin-top: rem-calc(45);
+	margin-bottom: rem-calc(20);
 }
 
 .header__brand {
