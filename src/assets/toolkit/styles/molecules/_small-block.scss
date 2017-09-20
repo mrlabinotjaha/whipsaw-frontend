@@ -7,6 +7,9 @@
 		@include scut-margin(n n rem-calc(50) n);
 		@include grid-col(12);
 	}
+	&:last-child {
+		margin: 0px;
+	}
 }
 
 .small-block__image {
