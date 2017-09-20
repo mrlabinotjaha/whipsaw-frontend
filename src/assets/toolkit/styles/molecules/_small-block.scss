@@ -1,7 +1,8 @@
 
 .small-block {
 	@include grid-col(4);
-
+	@include scut-margin(n n rem-calc(115) n);
+	
 	@include breakpoint(small only) {
 		@include scut-margin(n n rem-calc(50) n);
 		@include grid-col(12);
