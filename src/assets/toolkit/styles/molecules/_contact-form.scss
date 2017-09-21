@@ -1,0 +1,32 @@
+.contact-form {
+	@include scut-margin(n n rem-calc(140) n);
+	min-height: 300px;
+	&:last-child {
+		margin: 0px;
+	}
+}
+
+.contact-form__title {
+	font-size: rem-calc(50);
+	@include scut-margin(n n rem-calc(30) n);
+}
+
+.contact-form__text {
+	@include scut-margin(n n rem-calc(25) n);
+	font-size: rem-calc(28);
+	font-weight: bold;
+	line-height: 1.25;
+	a {
+		color: color(black);
+	}
+}
+
+.contact-form__subtext {
+	@include scut-margin(n n rem-calc(40) n);
+	font-size: rem-calc(28);
+	font-weight: bold;
+	line-height: 1.25;
+	a {
+		color: color(black);
+	}
+}

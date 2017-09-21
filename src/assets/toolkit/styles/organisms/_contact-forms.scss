@@ -1,0 +1,5 @@
+.contact-forms {
+		@include scut-margin(rem-calc(0) n rem-calc(200) n);
+		padding-left: rem-calc(100) !important;
+		padding-right: rem-calc(0) !important;
+}

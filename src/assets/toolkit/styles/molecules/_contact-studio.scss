@@ -1,0 +1,47 @@
+.contact-studio {
+	@include scut-margin(n n rem-calc(140) n);
+	min-height: 300px;
+	&:last-child {
+		margin: 0px;
+	}
+}
+
+.contact-studio__title {
+	font-size: rem-calc(50);
+	@include scut-margin(n n rem-calc(30) n);
+	&:empty {
+		&:after {
+			content: ".";
+		}
+		@include scut-relative(n n n rem-calc(-70000));
+	}
+}
+
+.contact-studio__city {
+	@include scut-margin(n n rem-calc(25) n);
+	font-size: rem-calc(28);
+	font-weight: lighter;
+	text-decoration: underline;
+	line-height: 1.25;
+	a {
+		color: #000000 ;
+	}
+}
+
+.contact-studio__address {
+	@include scut-margin(n n rem-calc(22) n);
+	font-size: rem-calc(28);
+	font-weight: bold;
+	line-height: 1.25;
+	a {
+		color: color(black);
+	}
+}
+
+.contact-studio__number {
+	font-size: rem-calc(28);
+	font-weight: lighter;
+	a {
+		color: #000000 ;
+	}
+}
