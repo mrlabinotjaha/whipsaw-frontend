@@ -1,0 +1,6 @@
+
+.join-items {
+	@include scut-margin(rem-calc(140) n rem-calc(200) n);
+	padding-left: rem-calc(100) !important;
+	padding-right: rem-calc(300) !important;
+}
