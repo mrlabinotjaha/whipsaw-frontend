@@ -1,0 +1,28 @@
+
+.project-details {
+	@include scut-margin(rem-calc(80) 0 0 0);
+	padding: 0px;
+	list-style: none;
+	font-size: rem-calc(28);
+	color: #000000;
+}
+
+.project-details__row {
+	@include grid-row();
+	@include scut-margin(n n rem-calc(15) n);
+	
+	&:last-child {
+		margin: 0px;
+	}
+}
+
+.project-details__label {
+	@include grid-col(2, 0);
+	width: 190px;
+}
+
+.project-details__value {
+	@include grid-col(8, 0);
+	@include grid-col-end();
+	width: calc( 100% - 190px );
+}
