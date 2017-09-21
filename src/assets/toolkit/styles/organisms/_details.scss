@@ -3,6 +3,7 @@
 	@include scut-margin(rem-calc(130) n rem-calc(130) n);
 	@include grid-col(12);
 	padding-left: rem-calc(100) !important;
+
 }
 
 .details__title {
@@ -40,4 +41,17 @@
 	@include scut-margin(rem-calc(70) 20vw n n);
 	font-size: rem-calc(28);
 	line-height: 1.36;
+}
+
+.details__button {
+	@include scut-margin(rem-calc(85) n n n);
+	h1 {
+		font-size: rem-calc(50);
+	  font-weight: bold;
+	  line-height: 1.1;
+	  margin: 0px;
+	  a {
+			color: color(black);
+	  }
+	}
 }
