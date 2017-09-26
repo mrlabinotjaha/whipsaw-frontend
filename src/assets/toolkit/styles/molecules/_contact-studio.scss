@@ -7,7 +7,7 @@
 }
 
 .contact-studio__title {
-	font-size: rem-calc(50);
+	@include font-size(title);
 	@include scut-margin(n n rem-calc(30) n);
 	&:empty {
 		&:after {
@@ -19,7 +19,7 @@
 
 .contact-studio__city {
 	@include scut-margin(n n rem-calc(25) n);
-	font-size: rem-calc(28);
+	@include font-size(text);
 	font-weight: lighter;
 	text-decoration: underline;
 	line-height: 1.25;
@@ -30,7 +30,7 @@
 
 .contact-studio__address {
 	@include scut-margin(n n rem-calc(22) n);
-	font-size: rem-calc(28);
+	@include font-size(text);
 	font-weight: bold;
 	line-height: 1.25;
 	a {
@@ -39,7 +39,7 @@
 }
 
 .contact-studio__number {
-	font-size: rem-calc(28);
+	@include font-size(text);
 	font-weight: lighter;
 	a {
 		color: #000000 ;

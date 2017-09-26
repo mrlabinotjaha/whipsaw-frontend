@@ -1,0 +1,20 @@
+
+@mixin font-size( $size, $overwrite:() ) {
+    $font-size: map-merge( map-get($font-sizes, $size), $overwrite );
+    $scale: 0.8;
+
+        font-size: rem-calc( max( map-get($font-size, 'xxlg')*$scale, map-get($font-size, 'min') ) );
+
+    @include breakpoint(xlarge down) {
+        font-size: rem-calc( max( map-get($font-size, 'xlg' )*$scale, map-get($font-size, 'min') ) );
+    }
+    @include breakpoint(large down) {
+        font-size: rem-calc( max( map-get($font-size, 'lg'  )*$scale, map-get($font-size, 'min') ) );
+    }
+    @include breakpoint(medium down) {
+        font-size: rem-calc( max( map-get($font-size, 'md'  )*$scale, map-get($font-size, 'min') ) );
+    }
+    @include breakpoint(small only) {
+        font-size: rem-calc( max( map-get($font-size, 'sm'  )*$scale, map-get($font-size, 'min') ) );
+    }
+}

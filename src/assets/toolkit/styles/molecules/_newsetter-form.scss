@@ -8,22 +8,9 @@
 
 .newsetter-form__label {
 	@include scut-margin( n n rem-calc(18) rem-calc(24) );
-	font-size: rem-calc(20);
+	@include font-size(subtitle);
 	color: transparentize($black, 0.6);
 	text-transform: uppercase;
-
-	@include breakpoint(xlarge down) {
-		font-size: rem-calc(19);
-	}
-	@include breakpoint(large down) {
-		font-size: rem-calc(18);
-	}
-	@include breakpoint(medium down) {
-		font-size: rem-calc(17);
-	}
-	@include breakpoint(small only) {
-		font-size: rem-calc(16);
-	}
 
 }
 
@@ -33,23 +20,8 @@
 
 .newsetter-form__input {
 	@include scut-padding( rem-calc(9) rem-calc(24) );
-	font-size: rem-calc(28);
+	@include font-size(text);
 	height: rem-calc(60);
-
-
-	@include breakpoint(xlarge down) {
-		font-size: rem-calc(26);
-	}
-	@include breakpoint(large down) {
-		font-size: rem-calc(24);
-	}
-	@include breakpoint(medium down) {
-		font-size: rem-calc(22);
-	}
-	@include breakpoint(small only) {
-		font-size: rem-calc(20);
-	}
-
 
 	&, &:focus { 
 		border: none;
@@ -66,22 +38,8 @@
 .newsetter-form__button {
 	@include scut-absolute(n rem-calc(24) n n);
 	@include scut-center-transform(y);
-	font-size: rem-calc(20);
+	@include font-size(subtitle);
 	font-weight: bold;
 	text-transform: uppercase;
 	cursor: pointer;
-
-	@include breakpoint(xlarge down) {
-		font-size: rem-calc(19);
-	}
-	@include breakpoint(large down) {
-		font-size: rem-calc(18);
-	}
-	@include breakpoint(medium down) {
-		font-size: rem-calc(17);
-	}
-	@include breakpoint(small only) {
-		font-size: rem-calc(16);
-	}
-
 }

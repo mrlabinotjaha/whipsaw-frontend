@@ -13,7 +13,7 @@
 }
 
 .team-member-block__details {
-	font-size: rem-calc(30);
+	@include font-size(small-title);
 	line-height: 1.17;
 	color: color(black);
 }

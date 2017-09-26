@@ -1,9 +1,9 @@
 
 .project-details {
 	@include scut-margin(rem-calc(80) 0 0 0);
+	@include font-size(text);
 	padding: 0px;
 	list-style: none;
-	font-size: rem-calc(28);
 	color: #000000;
 }
 

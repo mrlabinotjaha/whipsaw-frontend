@@ -7,11 +7,11 @@
 
 .join-hello__title {
 	@include scut-margin(n n rem-calc(30) n);
-	font-size: rem-calc(50);
+	@include font-size(title);
 	font-weight: bold;
 }
 
 .join-hello__text {
-	font-size: rem-calc(28);
+	@include font-size(text);
 	line-height: 1.36;
 }

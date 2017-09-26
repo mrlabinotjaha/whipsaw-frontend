@@ -45,39 +45,13 @@
 
 .horizontal-block__title {
 	@include scut-margin(n n rem-calc(40) n);
-	font-size: rem-calc(50);
+	@include font-size(title);
 	font-weight: bold;
 	line-height: 1.1;
-
-	@include breakpoint(xlarge down) {
-		font-size: rem-calc(40);
-	}
-	@include breakpoint(large down) {
-		font-size: rem-calc(30);
-	}
-	@include breakpoint(medium down) {
-		font-size: rem-calc(35);
-	}
-	@include breakpoint(small only) {
-		font-size: rem-calc(30);
-	}
 }
 
 .horizontal-block__text {
-	font-size: rem-calc(28);
+	@include font-size(text);
 	line-height: 1.36;
 	text-align: left;
-
-	@include breakpoint(xlarge down) {
-		font-size: rem-calc(24);
-	}
-	@include breakpoint(large down) {
-		font-size: rem-calc(20);
-	}
-	@include breakpoint(medium down) {
-		font-size: rem-calc(22);
-	}
-	@include breakpoint(small only) {
-		font-size: rem-calc(20);
-	}
 }

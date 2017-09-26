@@ -8,18 +8,18 @@
 }
 
 .join-item__title {
-	font-size: rem-calc(50);
+	@include font-size(title);
 	font-weight: bold;
 }
 
 .join-item__text {
 	@include scut-margin(n n rem-calc(40) n);
-	font-size: rem-calc(28);
+	@include font-size(text);
 	line-height: 1.36;
 }
 
 .join-item__link {
-	font-size: rem-calc(28);
+	@include font-size(text);
 	font-weight: bold;
 	color: color(black);
 }

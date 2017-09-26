@@ -8,7 +8,7 @@
 
 .details__title {
 	@include scut-margin(n n rem-calc(30) n);
-	font-size: rem-calc(50);
+	@include font-size(title);
 	line-height: 1.1;
 	color: color(black);	
 
@@ -27,31 +27,31 @@
 
 .details__subtitle {
 	@include scut-margin(n n rem-calc(15) n);
-	font-size: rem-calc(28);
+	@include font-size(text);
 	display: block;
 }
 
 .details__date {
 	@include scut-margin(n n rem-calc(15) n);
-	font-size: rem-calc(28);
+	@include font-size(text);
 	display: block;
 }
 
 .details__text {
 	@include scut-margin(rem-calc(70) 20vw n n);
-	font-size: rem-calc(28);
+	@include font-size(text);
 	line-height: 1.36;
 }
 
 .details__button {
 	@include scut-margin(rem-calc(85) n n n);
 	h1 {
-		font-size: rem-calc(50);
-	  font-weight: bold;
-	  line-height: 1.1;
-	  margin: 0px;
-	  a {
+		@include font-size(title);
+		font-weight: bold;
+		line-height: 1.1;
+		margin: 0px;
+		a {
 			color: color(black);
-	  }
+		}
 	}
 }
