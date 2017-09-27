@@ -1,0 +1,9 @@
+
+.big-text-section {
+	@include section( medium );
+	@include section-padding(small, true);
+}
+
+.big-text-section__column {
+	@include grid-col(12);
+}

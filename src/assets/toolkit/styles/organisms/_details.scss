@@ -1,9 +1,11 @@
 
 .details {
-	@include scut-margin(rem-calc(130) n rem-calc(130) n);
-	@include grid-col(12);
-	padding-left: rem-calc(100) !important;
+	@include section(small);
+	@include section-padding(medium, true);
+}
 
+.details__column {
+	@include grid-col(12);
 }
 
 .details__title {

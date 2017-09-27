@@ -1,0 +1,17 @@
+
+.two-column-section {
+	@include grid-row();
+	@include scut-margin(n n rem-calc(140) n);
+}
+
+.two-column-section__column {
+	@include grid-col(6);
+
+	&:first-child {
+		padding-right: rem-calc(40) !important;
+	}
+
+	@include breakpoint(medium down) {
+		@include grid-col(12);
+	}
+}

@@ -1,6 +1,6 @@
 
 .hero {
-	@include grid-row();
+	@include section(small);
 	position: relative;
 	padding-top: 56%;
 	min-height: 300px;
@@ -8,10 +8,12 @@
 
 .hero__column {
 	@include grid-col(12);
+	@include scut-absolute(0 0 0 0);
 }
 
 .hero__container {
-	@include scut-absolute(0 rem-calc(15) 0 rem-calc(15));
+	width: 100%;
+	height: 100%;
 	background-image: url('../images/test.png');
 	background-size: cover;
 	background-position: center;
@@ -19,5 +21,5 @@
 
 .hero__content {
 	@include scut-center-transform(y);
-	margin-left: 5%;
+	@include section-padding(medium);
 }

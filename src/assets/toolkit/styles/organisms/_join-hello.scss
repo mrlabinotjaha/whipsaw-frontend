@@ -1,8 +1,17 @@
 
 .join-hello {
+	@include section(medium);
+}
+
+.join-hello__column {
+	@include grid-col(12);
+}
+
+.join-hello__content {
 	@include scut-padding(rem-calc(140) rem-calc(100));
-	color: color(white);
+	@include section-padding(medium, true);
 	background: color(black);
+	color: color(white);
 }
 
 .join-hello__title {

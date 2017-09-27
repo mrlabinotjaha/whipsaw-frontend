@@ -1,7 +1,6 @@
 
 .big-block {
 	@include grid-row();
-	margin-bottom: 10vw;
 }
 
 .big-block__image {
@@ -12,27 +11,14 @@
 }
 
 .big-block__details {
-	@include grid-col(9, 60);
-	@include grid-col-end();
+	@include section-padding(small, true);
 	margin-top: 4vw;
 
 	.project-info__title {
 		font-weight: bold;
 	}
-
-	@include breakpoint(xlarge down) {
-		@include grid-col(10,40);
-		@include grid-col-end();
-	}
-	@include breakpoint(large down) {
-		@include grid-col(11,20);
-		@include grid-col-end();
-	}
-	@include breakpoint(medium down) {
-		@include grid-col(12,0);
-		@include grid-col-end();
-	}
 	@include breakpoint(small only) {
 		margin-top: 8vw;
 	}
+
 }

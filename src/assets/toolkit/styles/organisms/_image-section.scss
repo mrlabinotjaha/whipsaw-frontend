@@ -1,0 +1,8 @@
+
+.image-section {
+	@include section(small);
+}
+
+.image-section__column {
+	@include grid-col(12);
+}

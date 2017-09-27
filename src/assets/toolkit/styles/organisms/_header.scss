@@ -1,6 +1,7 @@
 
 .header {
-	@include grid-row();
+	@include section('none');
+	@include section-padding(small, true);
 	margin-top: rem-calc(45);
 	margin-bottom: rem-calc(20);
 }

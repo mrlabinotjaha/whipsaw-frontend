@@ -1,0 +1,8 @@
+
+.big-block-section {
+	@include section(medium);
+}
+
+.big-block-section__column {
+	@include grid-col(12);
+}

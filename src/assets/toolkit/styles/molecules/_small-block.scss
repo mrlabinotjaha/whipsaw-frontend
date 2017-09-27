@@ -1,14 +1,23 @@
 
 .small-block {
 	@include grid-col(4);
-	@include scut-margin(n n rem-calc(115) n);
+	@include scut-margin(rem-calc(115) n n n);
+
+	&:nth-child(1),&:nth-child(2),&:nth-child(3) {
+		@include scut-margin(0 n n n);
+	}
 	
 	@include breakpoint(small only) {
 		@include scut-margin(n n rem-calc(50) n);
 		@include grid-col(12);
-	}
-	&:last-child {
-		margin: 0px;
+
+		&:nth-child(1) {
+			@include scut-margin(0 n n n);
+		}
+
+		&:last-child {
+			margin: 0px;
+		}
 	}
 }
 
@@ -20,17 +29,7 @@
 }
 
 .small-block__title {
-	@include grid-col(12,60);
+	@include section-padding(smallx, true);
 	@include font-size(text);
 	margin-top: rem-calc(50);
-
-	@include breakpoint(xlarge down) {
-		@include grid-col(12,40);
-	}
-	@include breakpoint(large down) {
-		@include grid-col(12,20);
-	}
-	@include breakpoint(medium down) {
-		@include grid-col(12,0);
-	}
 }

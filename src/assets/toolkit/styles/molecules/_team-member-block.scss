@@ -1,7 +1,11 @@
 
 .team-member-block {
 	@include grid-col(4);
-	@include scut-margin(n n rem-calc(100) n);
+	@include scut-margin(rem-calc(100) n n n);
+
+	&:nth-child(1),&:nth-child(2),&:nth-child(3) {
+		@include scut-margin(0 n n n);
+	}
 }
 
 .team-member-block__image {
@@ -14,6 +18,7 @@
 
 .team-member-block__details {
 	@include font-size(small-title);
+	@include section-padding(smallx, true);
 	line-height: 1.17;
 	color: color(black);
 }

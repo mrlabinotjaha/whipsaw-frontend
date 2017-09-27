@@ -13,7 +13,7 @@
 
 .contact-form__text {
 	@include scut-margin(n n rem-calc(25) n);
-	@include font-size(subtitle);
+	@include font-size(text);
 	font-weight: bold;
 	line-height: 1.25;
 	a {
@@ -23,7 +23,7 @@
 
 .contact-form__subtext {
 	@include scut-margin(n n rem-calc(40) n);
-	@include font-size(subtitle);
+	@include font-size(text);
 	font-weight: bold;
 	line-height: 1.25;
 	a {

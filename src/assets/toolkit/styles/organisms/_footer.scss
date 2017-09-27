@@ -1,13 +1,9 @@
 
 .footer {
-	@include grid-row();
-	margin-top: 10vw;
+	@include section('none');
+	@include section-padding(small, true);
 	padding-bottom: 8vw;
 
-
-	@include breakpoint(small only) {
-		margin-top: 12vw;
-	}
 	@include breakpoint(medium only) {
 		padding-bottom: 14vw;
 	}
@@ -29,32 +25,33 @@
 }
 
 .footer__menu {
-	@include grid-col(4);
+	@include grid-col(4,0);
 	@include grid-col-end();
 
 	@include breakpoint(xlarge down) {
-		@include grid-col(5);
+		@include grid-col(5,0);
 		@include grid-col-end();
 	}
 
 	@include breakpoint(large down) {
-		@include grid-col(3);
+		@include grid-col(3,0);
 		@include grid-col-end();
 	}
 
 	@include breakpoint(medium down) {
-		@include grid-col(4);
+		@include grid-col(4,0);
 		@include grid-col-end();
 	}
 
 	@include breakpoint(small down) {
-		@include grid-col(6);
+		@include grid-col(6,0);
 		@include grid-col-end();
 	}
 
 
 	.menu__item {
 		margin-bottom: rem-calc(18);
+		padding-left: 0px;
 	}
 
 	.menu__item--active a {

@@ -1,16 +1,9 @@
 
 .small-blocks {
-	@include grid-row();
-
-	@include breakpoint(small only) {
-		margin-top: 14vw;
-	}
-	&.small-blocks--top-margin {
-		@include scut-margin(rem-calc(145) n n n);
-	}
+	@include section(medium);
 }
 
 .small-blocks__title {
-	@include scut-padding(n rem-calc(30));
+	@include grid-col(12);
 	@include scut-margin(n n rem-calc(40) n);
 }

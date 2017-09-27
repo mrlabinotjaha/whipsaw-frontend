@@ -1,20 +1,32 @@
 
 .leader {
-	@include grid-row();
+	@include section( small );
 	@include scut-relative();
+}
+
+.leader__content {
+	@include scut-relative();
+	@include section-padding(small, true);
+	height: 30vw;
+
+	@include breakpoint(medium down) {
+		height: 40vw;
+	}
+	@include breakpoint(small only) {
+		height: 50vw;
+	}
 }
 
 .leader__text {
 	@include grid-col(12);
 
-	@include scut-margin( 12vw n );
 	@include font-size(leader);
+	@include scut-relative();
+	top: 50%;
+	transform: translateY(-50%);
 	float: initial;
 	line-height: 1.1em;
 
-	@include breakpoint(medium down) {
-		@include scut-margin( 20vw n );
-	}
 	@include breakpoint(small only) {
 		br {
 			display: none;
@@ -23,8 +35,5 @@
 }
 
 .leader__image {
-	background-image: url('../images/ThinkingBig.jpg');
-	background-size: cover;
-	background-position: center; 
-	padding-top: 48%;
+	@include grid-col(12);
 }

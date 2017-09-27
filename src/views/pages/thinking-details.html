@@ -3,45 +3,19 @@
 
 {{> header }}
 
-<div class="row">
-	<div class="columns small-12">
-		{{> image }}
-	</div>
-</div>
+{{> image-section }}
 
-<div class="row">
-	<div class="columns small-12">
-		{{> details category="" }}
-	</div>
-</div>
-
-
+{{> details category="" }}
 
 <div class="page-builder">
 
-	<div class="row">
-		<div class="columns small-12">
-			{{> image imageName="Project1.jpg" }}
-		</div>
-	</div>
+	{{> image-section classes="no-space" imageName="Project1.jpg" }}
 
-	<div class="row">
-		<div class="columns small-12">
-			{{> two-column-image }}
-		</div>
-	</div>
+	{{> two-column-image classes="no-space" }}
 
-	<div class="row">
-		<div class="columns small-12">
-			{{> image imageName="Project4.jpg" }}
-		</div>
-	</div>
+	{{> image-section classes="no-space" imageName="Project4.jpg" }}
 
-	<div class="row">
-		<div class="columns small-12">
-			{{> image imageName="Project5.jpg" }}
-		</div>
-	</div>
+	{{> image-section classes="no-space" imageName="Project5.jpg" }}
 
 </div>
 

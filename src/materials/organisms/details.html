@@ -1,31 +1,32 @@
-<article class="details">
-	<h1 class="details__title">
-		{{#if (default category "Google") }}
-			<span class="details__company">{{ default category "Google" }}</span>
+<article class="details {{ classes }}">
+	<div class="details__column">
+		<h1 class="details__title">
+			{{#if (default category "Google") }}
+				<span class="details__company">{{ default category "Google" }}</span>
+			{{/if }}
+			{{ default title "The Neato brand story" }}
+		</h1>
+
+		{{#if (default subtitle "Whipsaw") }}
+			<span class="details__subtitle">{{ default subtitle "Whipsaw" }}</span>
 		{{/if }}
-		{{ default title "The Neato brand story" }}
-	</h1>
 
-	{{#if (default subtitle "Whipsaw") }}
-		<span class="details__subtitle">{{ default subtitle "Whipsaw" }}</span>
-	{{/if }}
+		{{#if (default date "12.13.16") }}
+			<span class="details__date">{{ default date "12.13.16" }}</span>
+		{{/if }}
+		
+		<div class="details__text">{{ default text "Google OnHub is a new type of residential router that connects all your wireless devices to the Internet and to one another. The high performance technology inside is contrasted beautifully with its quiet and graceful appearance outside. An elegantly tapered cylindrical shape houses an array of 13 antennas arranged in a circle, which provides ideal wireless signal performance. A gap between the inner and outer shells allows heat to escape and a status light to glow from within. OnHub is very easy to use – just plug it in and pair to the Google On app to calibrate and optimize its performance. OnHub’s outer shell is offered in a variety of finishes including natural bamboo, or creative minds can customize it as they wish. Cylindrical, devoid of fussy electronic design details, and individualized shells advocate a warmer friendlier future for consumer electronics. “Google’s new router is beautiful, simple and powerful” said Engadget. Yahoo Tech stated “OnHub is the wi-fi router Steve Jobs might have built.”" }}</div>
 
-	{{#if (default date "12.13.16") }}
-		<span class="details__date">{{ default date "12.13.16" }}</span>
-	{{/if }}
-	
-	<div class="details__text">{{ default text "Google OnHub is a new type of residential router that connects all your wireless devices to the Internet and to one another. The high performance technology inside is contrasted beautifully with its quiet and graceful appearance outside. An elegantly tapered cylindrical shape houses an array of 13 antennas arranged in a circle, which provides ideal wireless signal performance. A gap between the inner and outer shells allows heat to escape and a status light to glow from within. OnHub is very easy to use – just plug it in and pair to the Google On app to calibrate and optimize its performance. OnHub’s outer shell is offered in a variety of finishes including natural bamboo, or creative minds can customize it as they wish. Cylindrical, devoid of fussy electronic design details, and individualized shells advocate a warmer friendlier future for consumer electronics. “Google’s new router is beautiful, simple and powerful” said Engadget. Yahoo Tech stated “OnHub is the wi-fi router Steve Jobs might have built.”" }}</div>
+		{{#if details-info }}
+			<div class="details__info">
+				{{> project-details }}
+			</div>
+		{{/if }}
 
-	{{#if details-info }}
-		<div class="details__info">
-			{{> project-details }}
+		{{#if details-button}}
+		<div class="details__button">
+			<h1><a href="#">APPLY</a></h1>
 		</div>
-	{{/if }}
-
-	{{#if details-button}}
-	<div class="details__button">
-		<h1><a href="#">APPLY</a></h1>
+		{{/if }}
 	</div>
-	{{/if }}
-
 </article>

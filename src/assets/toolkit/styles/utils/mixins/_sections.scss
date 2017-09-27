@@ -1,0 +1,150 @@
+
+@mixin section( $size ) {
+	@include grid-row();
+
+	@if $size != 'none' {
+		@include section-margin( $size );
+	}
+
+	&.no-space {
+		margin-bottom: 0px;
+	} 
+	&.small-space {
+		@include section-margin( small );	
+	} 
+	&.medium-space {
+		@include section-margin( medium );		
+	} 
+
+
+    &.no-space-top {
+        margin-bottom: 0px;
+    } 
+    &.small-space-top {
+        @include section-margin-top( small );   
+    } 
+    &.medium-space-top {
+        @include section-margin-top( medium );      
+    } 
+}
+
+@mixin section-margin( $size ) {
+    $section-space: map-get($section-spacing, $size);
+    $scale: 1;
+
+        margin-bottom: rem-calc( max( map-get($section-space, 'xxlg')*$scale, map-get($section-space, 'min') ) );
+
+    @include breakpoint(xlarge down) {
+        margin-bottom: rem-calc( max( map-get($section-space, 'xlg' )*$scale, map-get($section-space, 'min') ) );
+    }
+    @include breakpoint(large down) {
+        margin-bottom: rem-calc( max( map-get($section-space, 'lg'  )*$scale, map-get($section-space, 'min') ) );
+    }
+    @include breakpoint(medium down) {
+        margin-bottom: rem-calc( max( map-get($section-space, 'md'  )*$scale, map-get($section-space, 'min') ) );
+    }
+    @include breakpoint(small only) {
+        margin-bottom: rem-calc( max( map-get($section-space, 'sm'  )*$scale, map-get($section-space, 'min') ) );
+    }
+}
+
+@mixin section-margin-top( $size ) {
+    $section-space: map-get($section-spacing, $size);
+    $scale: 1;
+
+        margin-top: rem-calc( max( map-get($section-space, 'xxlg')*$scale, map-get($section-space, 'min') ) );
+
+    @include breakpoint(xlarge down) {
+        margin-top: rem-calc( max( map-get($section-space, 'xlg' )*$scale, map-get($section-space, 'min') ) );
+    }
+    @include breakpoint(large down) {
+        margin-top: rem-calc( max( map-get($section-space, 'lg'  )*$scale, map-get($section-space, 'min') ) );
+    }
+    @include breakpoint(medium down) {
+        margin-top: rem-calc( max( map-get($section-space, 'md'  )*$scale, map-get($section-space, 'min') ) );
+    }
+    @include breakpoint(small only) {
+        margin-top: rem-calc( max( map-get($section-space, 'sm'  )*$scale, map-get($section-space, 'min') ) );
+    }
+}
+
+
+
+@mixin section-padding( $size, $both-sides: false, $important: false ) {
+    $section-padding-i: map-get($section-padding, $size);
+    $scale: 1;
+    
+    @if $important == true {
+
+            padding-left: rem-calc( max( map-get($section-padding-i, 'xxlg')*$scale, map-get($section-padding-i, 'min') ) ) !important;
+
+        @include breakpoint(xlarge down) {
+            padding-left: rem-calc( max( map-get($section-padding-i, 'xlg' )*$scale, map-get($section-padding-i, 'min') ) ) !important;
+        }
+        @include breakpoint(large down) {
+            padding-left: rem-calc( max( map-get($section-padding-i, 'lg'  )*$scale, map-get($section-padding-i, 'min') ) ) !important;
+        }
+        @include breakpoint(medium down) {
+            padding-left: rem-calc( max( map-get($section-padding-i, 'md'  )*$scale, map-get($section-padding-i, 'min') ) ) !important;
+        }
+        @include breakpoint(small only) {
+            padding-left: rem-calc( max( map-get($section-padding-i, 'sm'  )*$scale, map-get($section-padding-i, 'min') ) ) !important;
+        }
+
+        @if $both-sides == true {
+
+                padding-right: rem-calc( max( map-get($section-padding-i, 'xxlg')*$scale, map-get($section-padding-i, 'min') ) ) !important;
+
+            @include breakpoint(xlarge down) {
+                padding-right: rem-calc( max( map-get($section-padding-i, 'xlg' )*$scale, map-get($section-padding-i, 'min') ) ) !important;
+            }
+            @include breakpoint(large down) {
+                padding-right: rem-calc( max( map-get($section-padding-i, 'lg'  )*$scale, map-get($section-padding-i, 'min') ) ) !important;
+            }
+            @include breakpoint(medium down) {
+                padding-right: rem-calc( max( map-get($section-padding-i, 'md'  )*$scale, map-get($section-padding-i, 'min') ) ) !important;
+            }
+            @include breakpoint(small only) {
+                padding-right: rem-calc( max( map-get($section-padding-i, 'sm'  )*$scale, map-get($section-padding-i, 'min') ) ) !important;
+            }
+
+        }
+
+    } @else {
+        
+            padding-left: rem-calc( max( map-get($section-padding-i, 'xxlg')*$scale, map-get($section-padding-i, 'min') ) );
+
+        @include breakpoint(xlarge down) {
+            padding-left: rem-calc( max( map-get($section-padding-i, 'xlg' )*$scale, map-get($section-padding-i, 'min') ) );
+        }
+        @include breakpoint(large down) {
+            padding-left: rem-calc( max( map-get($section-padding-i, 'lg'  )*$scale, map-get($section-padding-i, 'min') ) );
+        }
+        @include breakpoint(medium down) {
+            padding-left: rem-calc( max( map-get($section-padding-i, 'md'  )*$scale, map-get($section-padding-i, 'min') ) );
+        }
+        @include breakpoint(small only) {
+            padding-left: rem-calc( max( map-get($section-padding-i, 'sm'  )*$scale, map-get($section-padding-i, 'min') ) );
+        }
+
+        @if $both-sides == true {
+
+                padding-right: rem-calc( max( map-get($section-padding-i, 'xxlg')*$scale, map-get($section-padding-i, 'min') ) );
+
+            @include breakpoint(xlarge down) {
+                padding-right: rem-calc( max( map-get($section-padding-i, 'xlg' )*$scale, map-get($section-padding-i, 'min') ) );
+            }
+            @include breakpoint(large down) {
+                padding-right: rem-calc( max( map-get($section-padding-i, 'lg'  )*$scale, map-get($section-padding-i, 'min') ) );
+            }
+            @include breakpoint(medium down) {
+                padding-right: rem-calc( max( map-get($section-padding-i, 'md'  )*$scale, map-get($section-padding-i, 'min') ) );
+            }
+            @include breakpoint(small only) {
+                padding-right: rem-calc( max( map-get($section-padding-i, 'sm'  )*$scale, map-get($section-padding-i, 'min') ) );
+            }
+
+        }
+
+    }
+}

@@ -1,0 +1,12 @@
+
+$section-spacing: (
+    small: 		( xxlg: rem-calc(140), xlg: rem-calc(120), lg: rem-calc(100), md: rem-calc(80), sm: rem-calc(60), min: rem-calc(60) ),
+    medium: 	( xxlg: rem-calc(210), xlg: rem-calc(190), lg: rem-calc(170), md: rem-calc(150), sm: rem-calc(130), min: rem-calc(60) )
+) !default;
+
+
+$section-padding: (
+    smallx: 	( xxlg: rem-calc(30), xlg: rem-calc(20), lg: rem-calc(10), md: rem-calc(0), sm: rem-calc(30), min: rem-calc(0) ),
+    small: 		( xxlg: rem-calc(30), xlg: rem-calc(30), lg: rem-calc(30), md: rem-calc(30), sm: rem-calc(30), min: rem-calc(30) ),
+    medium: 	( xxlg: rem-calc(95), xlg: rem-calc(75), lg: rem-calc(55), md: rem-calc(35), sm: rem-calc(30), min: rem-calc(30) )
+) !default;

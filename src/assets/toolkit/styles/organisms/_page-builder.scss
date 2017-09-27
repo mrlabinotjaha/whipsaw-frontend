@@ -1,4 +1,8 @@
 
 .page-builder {
-	// margin-top: 140px;
+	@include section(medium);
+
+	> *:last-child {
+		margin-bottom: 0px !important;
+	}
 }

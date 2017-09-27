@@ -1,0 +1,27 @@
+
+.content-group {
+	@include font-size(text);
+	line-height: 1.36;
+}
+
+.content-group__title {
+	@include font-size(title);
+}
+
+.content-group__content {
+	h1 {
+		@include font-size(title);
+	}
+	
+	h3 {
+		@include scut-margin(n n rem-calc(20) n);
+		@include font-size(text);
+		line-height: 1.36;
+		border-bottom: 2px solid color(black);
+		display: inline-block;
+	}
+
+	p {
+		
+	}
+}

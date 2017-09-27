@@ -1,6 +1,6 @@
 
 .featured-item {
-	@include grid-row();
+	@include grid-col(12);
 
 	@include breakpoint(small only) {
 		@include scut-margin(n n rem-calc(20) n);
@@ -15,7 +15,7 @@
 		}
 	}
 	.featured-item__content {
-		padding-left: 5%;
+		@include section-padding(medium, false);
 	}
 }
 
@@ -48,6 +48,7 @@
 	}
 	@include breakpoint(small only) {
 		@include grid-col(12);
+		@include section-padding(small, true);
 	}
 
 	.project-info__text  {

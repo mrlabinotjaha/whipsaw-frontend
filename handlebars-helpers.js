@@ -1,4 +1,5 @@
 var _ = require('lodash');
+var Handlebars = require("handlebars");
 
 module.exports = {
 	default: function (value, defaultValue) {

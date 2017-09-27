@@ -5,18 +5,8 @@
 
 {{> leader }}
 
-<div class="row">
-	<div class="columns small-12">
-		{{> big-block title=home.thinking_item_big.title text=home.thinking_item_big.text }}
-	</div>
-</div>
+{{> big-block-section title=home.thinking_item_big.title text=home.thinking_item_big.text }}
 
-<div class="row">
-	<div class="columns small-12">
-		{{#each thinking.thinking_items}}
-			{{> horizontal-block image=this.image title=this.title text=this.text right=this.right }}
-		{{/each}}
-	</div>
-</div>
+{{> horizontal-blocks items=thinking.thinking_items }}
 
 {{> footer }}

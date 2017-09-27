@@ -1,8 +1,4 @@
 
 .featured-items {
-	@include scut-margin(8vw n 10vw n);
-
-	@include breakpoint(small only) {
-		margin-bottom: 12vw;
-	}
+	@include section(small);
 }

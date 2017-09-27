@@ -1,0 +1,11 @@
+
+.big-text {
+	@include font-size(title);
+	line-height: 1.1;
+
+	@include breakpoint(small only) {
+		br {
+			display: none;
+		}
+	}
+}

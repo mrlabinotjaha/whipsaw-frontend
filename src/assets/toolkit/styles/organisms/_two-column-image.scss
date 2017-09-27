@@ -1,0 +1,15 @@
+
+.two-column-image {
+	@include section(small);
+}
+
+.two-column-image__column {
+	@include grid-col(6);
+
+	&:first-child {
+		padding-right: 0 !important;
+	}
+	&:last-child {
+		padding-left: 0 !important;
+	}
+}

@@ -1,23 +1,14 @@
 
 
-
 {{> header }}
 
 {{> leader }}
 
 {{> hero }}
 
-<div class="row">
-	<div class="columns small-12">
-		{{> featured-items items=home.featured_items }}
-	</div>
-</div>
+{{> featured-items items=home.featured_items }}
 
-<div class="row">
-	<div class="columns small-12">
-		{{> big-block category=home.thinking_item_big.category title=home.thinking_item_big.title text=home.thinking_item_big.text }}
-	</div>
-</div>
+{{> big-block-section category=home.thinking_item_big.category title=home.thinking_item_big.title text=home.thinking_item_big.text }}
 
 {{> small-blocks items=home.news }}
 
