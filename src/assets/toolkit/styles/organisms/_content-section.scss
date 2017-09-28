@@ -1,10 +1,9 @@
 
 .content-section {
 	@include section(small);
-	@include section-padding(small, true);
 }
 
 .content-section__column {
-	@include grid-col(10);
+	@include grid-col(12);
 	@include grid-col-end();
 }

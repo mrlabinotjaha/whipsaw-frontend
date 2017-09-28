@@ -3,7 +3,15 @@
 	@include section(medium);
 }
 
-.small-blocks__title {
+.small-blocks__header {
 	@include grid-col(12);
 	@include scut-margin(n n rem-calc(40) n);
+}
+
+.small-blocks__title {
+	@include section-padding(smallx, true);
+}
+
+.small-blocks__body {
+	
 }

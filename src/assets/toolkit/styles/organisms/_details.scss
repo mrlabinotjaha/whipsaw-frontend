@@ -9,7 +9,7 @@
 }
 
 .details__title {
-	@include scut-margin(n n rem-calc(30) n);
+	@include scut-margin(n n 1vw n);
 	@include font-size(title);
 	line-height: 1.1;
 	color: color(black);	
@@ -40,13 +40,26 @@
 }
 
 .details__text {
-	@include scut-margin(rem-calc(70) 20vw n n);
+	@include grid-col(10,0);
+	@include grid-col-end();
+	@include scut-margin(2vw n n n);
 	@include font-size(text);
 	line-height: 1.36;
+
+	@include breakpoint(small only) {
+		@include grid-col(12,0);
+		@include grid-col-end();
+		@include scut-margin(rem-calc(30) n n n);
+	}
+}
+
+.details__info {
+	@include grid-col(12,0);
 }
 
 .details__button {
-	@include scut-margin(rem-calc(85) n n n);
+	@include grid-col(12,0);
+	@include scut-margin(rem-calc(70) n n n);
 	h1 {
 		@include font-size(title);
 		font-weight: bold;

@@ -1,10 +1,14 @@
 
 .horizontal-block {
 	@include grid-row();
-	@include scut-margin(n n rem-calc(140) n);
+	@include scut-margin(n n 8vw n);
 
 	&:last-child {
 		@include scut-margin(n n rem-calc(0) n);
+	}
+
+	@include breakpoint(small only) {
+		@include scut-margin(n n rem-calc(60) n);
 	}
 }
 

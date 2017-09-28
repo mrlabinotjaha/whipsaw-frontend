@@ -13,5 +13,10 @@
 
 	@include breakpoint(medium down) {
 		@include grid-col(12);
+
+		&:first-child {
+			padding-right: rem-calc(15) !important;
+			margin-bottom: rem-calc(70);
+		}
 	}
 }

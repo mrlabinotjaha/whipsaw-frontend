@@ -1,6 +1,8 @@
 .contact-form {
 	@include scut-margin(n n rem-calc(140) n);
-	min-height: 300px;
+	height: 20vw;
+	min-height: 200px;
+	max-height: 300px;
 	&:last-child {
 		margin: 0px;
 	}

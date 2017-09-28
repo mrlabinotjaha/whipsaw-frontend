@@ -1,10 +1,12 @@
 
 <div class="small-blocks {{classes}}">
 	{{#if small-blocks-title}}
-		<h1 class="small-blocks__title">{{ default text "Related Projects"}}</h1>
+		<div class="small-blocks__header">
+			<h1 class="small-blocks__title">{{ default text "Related Projects"}}</h1>
+		</div>
 	{{/if }}
 	
-	<div>
+	<div class="small-blocks__body">
 		{{#each items}}
 			{{> small-block title=this.title category=this.category }}
 		{{/each}}

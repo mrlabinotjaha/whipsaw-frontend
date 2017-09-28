@@ -7,4 +7,8 @@
 
 .contact-forms__item {
 	@include grid-col(6);
+
+	@include breakpoint(small only) {
+		@include grid-col(12);
+	}
 }

@@ -8,10 +8,14 @@
 }
 
 .join-hello__content {
-	@include scut-padding(rem-calc(140) rem-calc(100));
+	@include scut-padding(6vw rem-calc(100));
 	@include section-padding(medium, true);
 	background: color(black);
 	color: color(white);
+
+	@include breakpoint(small only) {
+		@include scut-padding(rem-calc(60) n);
+	}
 }
 
 .join-hello__title {

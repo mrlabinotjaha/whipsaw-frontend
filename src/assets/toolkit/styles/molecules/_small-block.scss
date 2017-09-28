@@ -1,14 +1,33 @@
 
 .small-block {
-	@include grid-col(4);
-	@include scut-margin(rem-calc(115) n n n);
+	@include breakpoint(large) {
+		@include grid-col(4);
+		@include grid-col-end();
+		@include scut-margin(rem-calc(115) n n n);
 
-	&:nth-child(1),&:nth-child(2),&:nth-child(3) {
-		@include scut-margin(0 n n n);
+		&:nth-child(1),&:nth-child(2),&:nth-child(3) {
+			@include scut-margin(0 n n n);
+		}
+		&:nth-child(3n+1) {
+			clear: left;
+		}
+	}
+
+	@include breakpoint(medium only) {
+		@include grid-col(6);
+		@include grid-col-end();
+		@include scut-margin(rem-calc(115) n n n);
+
+		&:nth-child(1),&:nth-child(2) {
+			@include scut-margin(0 n n n);
+		}
+		&:nth-child(2n+1) {
+			clear: left;
+		}
 	}
 	
 	@include breakpoint(small only) {
-		@include scut-margin(n n rem-calc(50) n);
+		@include scut-margin(0 n rem-calc(50) n);
 		@include grid-col(12);
 
 		&:nth-child(1) {
