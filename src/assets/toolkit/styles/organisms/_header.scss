@@ -30,7 +30,7 @@
 		@include scut-fixed( 0 0 0 0 );
 		
 		display: block;
-		background: transparentize($white,0.03);
+		background: $white;
 		z-index: 30;
 		max-height: 0px;
 		opacity: 0;
