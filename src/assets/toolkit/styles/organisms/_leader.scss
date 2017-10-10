@@ -20,6 +20,10 @@
 	float: initial;
 	line-height: 1.1em;
 
+	p {
+		line-height: 1.1em;
+	}
+
 	@include breakpoint(small only) {
 		br {
 			display: none;

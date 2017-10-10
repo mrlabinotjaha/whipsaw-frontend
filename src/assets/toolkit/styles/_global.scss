@@ -1,12 +1,34 @@
 
-html, body {
+html {
 	overflow-x: hidden;
+} 
+body {
+	overflow: hidden;
 } 
 
 a {
 	color: inherit;
 
-	&:hover, &:active {
+	&:hover, &:active, &:focus {
 		color: inherit;
 	}
+}
+
+p {
+	line-height: inherit;
+}
+
+*[data-effect] {
+	transition: all 1s;
+	transform: scale(1) translate3D(0,0px,0);
+	opacity: 1;
+}
+
+.invisibility-top {
+	transform: scale(1) translate3d(0,0px,0);
+	opacity: 0;
+}
+.invisibility-bottom {
+	transform: scale(1) translate3d(0,0px,0);
+	opacity: 0;
 }

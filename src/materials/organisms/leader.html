@@ -1,10 +1,10 @@
 <div class="leader {{classes}} {{#unless leader-image }}no-space{{/unless}}">
 	<div class="leader__content">
-		<h1 class="leader__text">{{{ default text "Innovating life,<br>one product at a time"}}}</h1>
+		<h1 class="leader__text" data-effect>{{{ default text "Innovating life,<br>one product at a time"}}}</h1>
 	</div>
 
 	{{#if leader-image }}
-		<div class="leader__image {{#compare leader-image-size 'big' }}leader__image--big{{/compare}}">
+		<div class="leader__image {{#compare leader-image-size 'big' }}leader__image--big{{/compare}}" data-effect>
 			{{> image imageName=leader-image }}
 		</div>		
 	{{/if }}

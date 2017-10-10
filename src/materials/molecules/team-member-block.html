@@ -1,8 +1,10 @@
 
-<div class="team-member-block">
-	<div class="team-member-block__image" style="background-image:url('{{ image (default imageName 'TeamMemberBig.jpg') }}');"></div>
-	<div class="team-member-block__details">
-		<div class="team-member-block__name">{{ default name "First Last" }}</div>
-		<div class="team-member-block__position">{{ default position "Position" }}</div>
-	</div>
+<div class="team-member-block" data-effect>
+	<a href="#">
+		<div class="team-member-block__image"><img src="{{ image (default imageName 'TeamMemberBig.jpg') }}"></div>
+		<div class="team-member-block__details">
+			<div class="team-member-block__name">{{ default name "First Last" }}</div>
+			<div class="team-member-block__position">{{ default position "Position" }}</div>
+		</div>
+	</a>
 </div>

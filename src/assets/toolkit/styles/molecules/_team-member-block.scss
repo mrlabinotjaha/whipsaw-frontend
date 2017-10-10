@@ -42,10 +42,6 @@
 
 .team-member-block__image {
 	@include scut-margin(n n rem-calc(50) n);
-	background-image: url('../images/TeamMemberBig.jpg');
-	background-size: cover;
-	background-position: center; 
-	padding-top: 86%;
 }
 
 .team-member-block__details {

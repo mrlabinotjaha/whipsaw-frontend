@@ -20,7 +20,7 @@ require('./foundation.js');
 // require('./compatibility/modernizr-tests.js');
 
 // Components
-// require('./components/owl-carousel.js');
+require('./components/effects.js');
 
 $(function(){
 	// $('input, textarea').placeholder();
