@@ -1,0 +1,19 @@
+
+.clients-logos {
+	@include section(small);
+	@include section-padding(medium, true);
+}
+
+.clients-logos__item {
+	@include grid-col(3);
+	@include scut-relative();
+	height: 215px;
+	max-height: 250px;
+
+	@include breakpoint(small only) {
+		@include grid-col(12);
+	}
+	img {
+		@include scut-center-transform();
+	}
+}

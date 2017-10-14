@@ -1,18 +1,16 @@
-
-.leader {
+.clients {
 	@include section( small );
 	@include scut-relative();
 }
 
-.leader__content {
+.clients__content {
 	@include flex-grid-row();
 	@include scut-relative();
 	@include section-padding(small, true);
 	min-height: 30vw;
-
 }
 
-.leader__text {
+.clients__title {
 	@include grid-col(12);
 	@include font-size(leader);
 	@include flex-align-self(middle);
@@ -31,6 +29,16 @@
 	}
 }
 
-.leader__image {
-	@include grid-col(12);
+.clients__paragraph {
+	@include flex-grid-row();
+	@include scut-relative();
+	@include section-padding(small, true);
+}
+
+.clients__text {
+	@include grid-col(10);
+	@include grid-col-end();
+	@include scut-margin(5vw n n n);
+	@include font-size(text);
+  line-height: 1.36;
 }
