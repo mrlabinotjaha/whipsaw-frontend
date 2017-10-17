@@ -1,0 +1,55 @@
+.awards-form {
+	@include section(small);
+	@include section-padding(medium, true);
+	@include flex-grid-row();
+}
+.awards-form__logo {
+	@include flex-grid-column(4);
+	@include breakpoint(small down) {
+		@include flex-grid-column(12);
+		text-align: center;
+	}
+}
+.awards-form__product {
+	@include flex-grid-column(8);
+	@include flex;
+	@include breakpoint(small down) {
+		@include flex-grid-column(12);
+	}
+	@include breakpoint(medium down) {
+		display: initial;
+	}
+	justify-content: space-around;
+	ul {
+		margin: 0;
+		list-style: none;
+	}
+}
+.awards-form__product--ul {
+	h3 {
+  	@include scut-margin(n n rem-calc(50) n);
+		@include font-size(title);
+  	line-height: 1.1;
+	}
+	a {
+		font-weight: bold;
+	}
+	@include font-size(text);
+  line-height: 1.17;
+}
+.awards-form__product--li {
+	@include scut-margin(n n rem-calc(33) n);
+}
+.awards-form__product--ul-right {
+	&:before {
+		@include breakpoint(medium down) {
+			display: none;
+		}
+		content: '*';
+  	@include scut-margin(n n rem-calc(50) n);
+  	@include font-size(title);
+		display: block;
+  	line-height: 1.1;
+		visibility: hidden;
+	}
+}

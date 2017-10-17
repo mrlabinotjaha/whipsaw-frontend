@@ -76,8 +76,8 @@ Triggers.init($, Foundation);
 // import { ResponsiveToggle } from '../../vendor/foundation-sites/js/foundation.responsiveToggle';
 // Foundation.plugin(ResponsiveToggle, 'ResponsiveToggle');
 
-// import { Reveal } from '../../vendor/foundation-sites/js/foundation.reveal';
-// Foundation.plugin(Reveal, 'Reveal');
+import { Reveal } from '../../vendor/foundation-sites/js/foundation.reveal';
+Foundation.plugin(Reveal, 'Reveal');
 
 // import { Slider } from '../../vendor/foundation-sites/js/foundation.slider';
 // Foundation.plugin(Slider, 'Slider');
