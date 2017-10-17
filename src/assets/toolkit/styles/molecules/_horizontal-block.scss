@@ -1,5 +1,6 @@
 
 .horizontal-block {
+	@include section-padding(small, true);
 	@include grid-row();
 	@include scut-margin(n n 8vw n);
 
@@ -28,7 +29,7 @@
 .horizontal-block__details{
 	@include scut-margin(10vh n n n);
 	@include grid-col(6);
-	@include section-padding(small, false, true);
+	@include section-padding(small, true, true);
 
 	@include breakpoint(xlarge down) {
 		@include scut-margin(5vh n n n);

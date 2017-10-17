@@ -20,7 +20,6 @@
 .menu__item a {
 	@include scut-padding(n rem-calc(3));
 	color: $black;
-	text-transform: uppercase;
 }
 
 .menu__item--active a {

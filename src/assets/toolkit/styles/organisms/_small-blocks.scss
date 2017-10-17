@@ -13,5 +13,5 @@
 }
 
 .small-blocks__body {
-	
+	@include section-padding(small, true);
 }

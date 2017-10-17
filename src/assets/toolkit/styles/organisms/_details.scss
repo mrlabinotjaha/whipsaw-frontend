@@ -43,7 +43,7 @@
 	@include grid-col(10,0);
 	@include grid-col-end();
 	@include scut-margin(2vw n n n);
-	@include font-size(text);
+	@include font-size(text-inner);
 	line-height: 1.36;
 
 	@include breakpoint(small only) {
