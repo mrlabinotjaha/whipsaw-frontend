@@ -1,0 +1,21 @@
+
+.about-logos {
+	@include section(small);
+	@include section-padding(medium, true);
+	margin-bottom: 0px;
+	padding-left: 15px;
+}
+
+.about-logos__item {
+	@include grid-col(4);
+	@include scut-relative();
+	height: 145px;
+	max-height: 145px;
+
+	@include breakpoint(small only) {
+		@include grid-col(12);
+	}
+	img {
+		@include scut-center-transform();
+	}
+}

@@ -1,0 +1,46 @@
+.work-filter {
+	@include grid-row();
+}
+.work-filter__content {
+	@include grid-col(12);
+	@include scut-margin(rem-calc(80) rem-calc(80));
+	outline: none;
+	button {
+		@include font-size(title);
+		font-weight: 400;
+		text-transform: uppercase;
+		padding: 0;
+		&,&:focus, &:hover {
+			background: $white;
+			color: $black;
+			outline: none;
+		}
+	}
+}
+.work-filter__reveal {
+	@include scut-padding(rem-calc(70) rem-calc(100));
+	outline: none;
+	display: none;
+	position: fixed;
+	top: 240px!important;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background: $white;
+}
+.work-filter__ul {
+	margin: 0;
+	list-style: none;
+}
+.work-filter__li {
+	a {
+		@include font-size(title);
+		font-weight: 300;
+		text-transform: uppercase;		
+	}
+	&.work-filter__li--active {
+		a {
+			color: #e80200;
+		}
+	}
+}

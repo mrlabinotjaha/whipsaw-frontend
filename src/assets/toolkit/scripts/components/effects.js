@@ -59,3 +59,66 @@ $(function(){
 
 
 });
+
+$('.reveal__close').on('click', function(){
+	$('.reveal-overlay').css('display', 'none');
+	$('body').removeClass('is-reveal-open');
+});
+
+// Filters
+
+// var all= document.getElementsByClassName('filter-item');
+// var filterBusiness = document.getElementsByClassName('filter-business')
+// var filterBranding = document.getElementsByClassName('filter-branding')
+// var filterCommercial= document.getElementsByClassName('filter-commercial')
+// var filterComputers= document.getElementsByClassName('filter-computers')
+// var filterConsumer= document.getElementsByClassName('filter-consumer')
+// var filterHousewares= document.getElementsByClassName('filter-housewares')
+// var filterInteraction= document.getElementsByClassName('filter-interaction')
+// var filterMedial= document.getElementsByClassName('filter-medial')
+// var filterRobotics= document.getElementsByClassName('filter-robotics')
+// var filterWearable= document.getElementsByClassName('filter-wearable')
+
+// function filteritem (type) {
+//   //Set All to display none
+//   for (var x = 0; x < all.length; x++) {
+//     all[x].style.display = "none";
+//   }
+//   //set all items with filter to display block
+//   for(var x = 0; x < type.length; x++){
+//     type[x].style.display = "block"
+//   }
+// }
+// document.getElementById('filter-wearable').onclick = function() {
+//   filteritem(filterWearable)
+// }
+// document.getElementById('filter-robotics').onclick = function() {
+//   filteritem(filterRobotics)
+// }
+// document.getElementById('filter-medial').onclick = function() {
+//   filteritem(filterMedial)
+// }
+// document.getElementById('filter-interaction').onclick = function() {
+//   filteritem(filterInteraction)
+// }
+// document.getElementById('filter-housewares').onclick = function() {
+//   filteritem(filterHousewares)
+// }
+// document.getElementById('filter-consumer').onclick = function() {
+//   filteritem(filterConsumer)
+// }
+// document.getElementById('filter-computers').onclick = function() {
+//   filteritem(filterComputers)
+// }
+// document.getElementById('filter-commercial').onclick = function() {
+//   filteritem(filterCommercial)
+// }
+// document.getElementById('filter-branding').onclick = function() {
+//   filteritem(filterBranding)
+// }
+// document.getElementById('filter-business').onclick = function() {
+//   filteritem(filterBusiness)
+// }
+// document.getElementById('filter-all').onclick = function() {
+//   filteritem(all)
+// }

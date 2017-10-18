@@ -10,7 +10,7 @@
 }
 
 .footer__navigation {
-	@include grid-col(4);
+	@include grid-col(6);
 
 
 	@include breakpoint(xlarge down) {
@@ -61,7 +61,7 @@
 }
 
 .footer__subscription {
-	@include grid-col(8);
+	@include grid-col(6);
 
 	@include breakpoint(xlarge down) {
 		@include grid-col(6);

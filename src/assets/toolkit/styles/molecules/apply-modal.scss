@@ -1,8 +1,67 @@
 .reveal {
+	@include grid-col(6);
+	@include grid-column-position(center);
+	@include breakpoint(large down) {
+		@include grid-col(8);
+		@include grid-column-position(center); 
+	}
+	@include breakpoint(medium down) {
+		@include grid-column-position(center); 
+		@include grid-col(10);
+		height: auto;
+		overflow: initial;
+	}
+	@include scut-padding(rem-calc(180) n);
 	background: transparent;
 	border: none;
 	outline: none;
+	top: 0!important;
+	.reveal__close {
+		position: absolute;
+		top: 100px;
+		right: 0;
+		background-color: transparent;
+		width: 30px;
+		height: 30px;
+	}
 }
 .reveal-overlay {
-	background: #000;
+	background: $black;
+}
+body.is-reveal-open {
+    overflow: hidden;
+    height: 100vh;
+}
+.reveal__form--input {
+	@include scut-margin(n n rem-calc(40) n);
+	input {
+		@include font-size(text);	
+		@include scut-padding(n 0);
+		font-weight: bold;
+		background-color: transparent;
+		border: none;
+		border-bottom: 1px solid rgba(255,255,255,0.5);
+		color: $white;
+		&:focus {
+			border: none;
+			border-bottom: 1px solid rgba(255,255,255,0.5);
+			background-color: transparent;
+			box-shadow: none;
+		}
+	}
+}
+
+.reveal__form--button {
+	text-align: right;
+	@include scut-margin(rem-calc(50) n n n);
+	button {
+		@include font-size(text);
+		@include scut-padding(0);
+		font-weight: bold;
+		background: transparent;
+		color: $white;
+		&:hover {
+			background-color: transparent;
+		}
+	}
 }
