@@ -21,9 +21,8 @@
 
 .contact-studio__city {
 	@include scut-margin(n n rem-calc(25) n);
-	@include font-size(text);
+	@include font-size(medium-title);
 	font-weight: lighter;
-	text-decoration: underline;
 	line-height: 1.25;
 	a {
 		color: #000000 ;

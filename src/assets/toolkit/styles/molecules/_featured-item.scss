@@ -5,6 +5,10 @@
 	@include breakpoint(small only) {
 		@include scut-margin(n n rem-calc(20) n);
 	}
+
+	.project-info__category {
+		text-transform: capitalize;
+	}
 }
 
 .featured-item.featured-item--right {

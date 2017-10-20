@@ -9,10 +9,27 @@
 
 	&:first-child {
 		padding-right: rem-calc(40) !important;
+
+		.image {
+			@include section-padding(small, false);
+		}
+	}
+	
+	&:last-child {
+		.image {
+			@include section-padding(small, true);
+			padding-left: 0px !important;
+		}
 	}
 
 	@include breakpoint(medium down) {
 		@include grid-col(12);
+
+
+		.image {
+			padding-left: 0px !important;
+			padding-right: 0px !important;
+		}
 
 		&:first-child {
 			padding-right: rem-calc(15) !important;

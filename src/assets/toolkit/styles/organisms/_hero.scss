@@ -4,6 +4,10 @@
 	position: relative;
 	padding-top: 56%;
 	min-height: 300px;
+
+	.project-info__category {
+		text-transform: capitalize;
+	}
 }
 
 .hero__column {

@@ -6,6 +6,7 @@
 
 .clients-logos__item {
 	@include grid-col(3);
+	@include grid-col-end();
 	@include scut-relative();
 	height: 215px;
 	max-height: 250px;

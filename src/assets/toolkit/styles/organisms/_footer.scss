@@ -52,6 +52,7 @@
 	.menu__item {
 		margin-bottom: rem-calc(18);
 		padding-left: 0px;
+		font-weight: normal;
 	}
 
 	.menu__item--active a {
@@ -61,7 +62,7 @@
 }
 
 .footer__subscription {
-	@include grid-col(6);
+	@include grid-col(5);
 
 	@include breakpoint(xlarge down) {
 		@include grid-col(6);

@@ -37,9 +37,25 @@
 }
 
 .newsetter-form__button {
-	@include scut-absolute(n rem-calc(0) n n);
-	@include scut-center-transform(y);
+	@include scut-absolute(rem-calc(20) rem-calc(0) n n);
 	@include font-size(subtitle);
+	padding: 0px;
+	background: none;
+	border: none;
 	text-transform: capitalize;
 	cursor: pointer;
+	transition: opacity 0.2s;
+
+	&:hover {
+		opacity: 0.8;
+	}
+}
+
+.mce_inline_error,
+#mce-error-response {
+	color: #e80200;
+}
+.mce_inline_success,
+#mce-success-response {
+	color: #025500;
 }

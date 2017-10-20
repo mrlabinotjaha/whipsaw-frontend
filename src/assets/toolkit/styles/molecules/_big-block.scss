@@ -8,7 +8,7 @@
 }
 
 .big-block__details {
-	@include section-padding(small, true);
+	@include section-padding(big, true);
 	margin-top: 4vw;
 
 	.project-info__title {

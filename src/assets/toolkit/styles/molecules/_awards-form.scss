@@ -26,13 +26,11 @@
 	}
 }
 .awards-form__product--ul {
+	@include flex-grid-column(6);
 	h3 {
   	@include scut-margin(n n rem-calc(50) n);
 		@include font-size(title);
   	line-height: 1.1;
-	}
-	a {
-		font-weight: bold;
 	}
 	@include font-size(text);
   line-height: 1.17;

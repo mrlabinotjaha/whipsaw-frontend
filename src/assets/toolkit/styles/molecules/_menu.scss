@@ -2,7 +2,6 @@
 .menu {
 	@include scut-relative(-3px n n n);
 	@include font-size(subtitle);
-	font-weight: bold;
 }
 
 .menu__item {
@@ -24,5 +23,5 @@
 
 .menu__item--active a {
 	color: color(primary);
-	border-bottom: 5px solid color(primary);
+	border-bottom: 2px solid color(primary);
 }

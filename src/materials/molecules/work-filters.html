@@ -1,22 +1,27 @@
 
 <section class="work-filter">
   <div class="work-filter__content"> 
-    <button class="button" data-toggle="work-filter__modal">Filter by <strong>ALL</strong></button>
 
-    <div class="work-filter__reveal" id="work-filter__modal" data-reveal data-overlay="false">
+    <div class="work-filter__filter">
+      <button class="button work-filter__toggle" data-toggle="work-filter__modal">Filter by <strong class="work-filter__current">ALL</strong></button>
+    </div>
+
+    <div class="work-filter__reveal" id="work-filter__modal">
+      <div class="work-filter__reveal_row">
       <ul class="work-filter__ul">
-        <li class="work-filter__li work-filter__li--active"><a href="#" class="active">All</a></li>
-        <li class="work-filter__li"><a href="#">Business Equipment</a></li>
-        <li class="work-filter__li"><a href="#">Branding</a></li>
-        <li class="work-filter__li"><a href="#">Commercial & Industrial</a></li>
-        <li class="work-filter__li"><a href="#">Computers</a></li>
-        <li class="work-filter__li"><a href="#">Consumer Electronics</a></li>
-        <li class="work-filter__li"><a href="#">Housewares</a></li>
-        <li class="work-filter__li"><a href="#">Interaction</a></li>
-        <li class="work-filter__li"><a href="#">Medial & Scientific</a></li>
-        <li class="work-filter__li"><a href="#">Robotics</a></li>
-        <li class="work-filter__li"><a href="#">Wearable</a></li>
+        <li class="work-filter__li work-filter__li--active"><a href="#" class="active" data-category="all">All</a></li>
+        <li class="work-filter__li"><a href="#" data-category="Business">Business Equipment</a></li>
+        <li class="work-filter__li"><a href="#" data-category="Branding">Branding</a></li>
+        <li class="work-filter__li"><a href="#" data-category="Commercial">Commercial & Industrial</a></li>
+        <li class="work-filter__li"><a href="#" data-category="Computers">Computers</a></li>
+        <li class="work-filter__li"><a href="#" data-category="Consumer">Consumer Electronics</a></li>
+        <li class="work-filter__li"><a href="#" data-category="Housewares">Housewares</a></li>
+        <li class="work-filter__li"><a href="#" data-category="Interaction">Interaction</a></li>
+        <li class="work-filter__li"><a href="#" data-category="Medial">Medial & Scientific</a></li>
+        <li class="work-filter__li"><a href="#" data-category="Robotics">Robotics</a></li>
+        <li class="work-filter__li"><a href="#" data-category="Wearable">Wearable</a></li>
       </ul>
+    </div>
     </div>
   </div>
 </section>

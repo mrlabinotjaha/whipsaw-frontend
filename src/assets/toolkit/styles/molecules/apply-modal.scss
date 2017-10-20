@@ -23,6 +23,7 @@
 		background-color: transparent;
 		width: 30px;
 		height: 30px;
+		cursor: pointer;
 	}
 }
 .reveal-overlay {
@@ -32,6 +33,22 @@ body.is-reveal-open {
     overflow: hidden;
     height: 100vh;
 }
+
+.wpcf7-response-output {
+	display: none !important;
+}
+
+.reveal__success {
+	color: white;
+    max-width: 80%;
+    font-size: 1.2rem;
+
+    a {
+    	font-size: 1rem;
+    	text-decoration: underline;
+    }
+}
+
 .reveal__form--input {
 	@include scut-margin(n n rem-calc(40) n);
 	input {
@@ -42,11 +59,54 @@ body.is-reveal-open {
 		border: none;
 		border-bottom: 1px solid rgba(255,255,255,0.5);
 		color: $white;
+
 		&:focus {
 			border: none;
 			border-bottom: 1px solid rgba(255,255,255,0.5);
 			background-color: transparent;
 			box-shadow: none;
+		}
+
+		&.wpcf7-not-valid {
+			border-bottom: 1px solid transparentize(#e80200,0.5);
+		}
+	}
+
+	input ~ .wpcf7-not-valid-tip {
+		display: none;
+	}
+
+	br {
+		display: none;
+	}
+
+	.wpcf7-form-control-wrap {
+		position: static;
+	}
+
+	p:empty { display: none; }
+}
+
+.reveal__form--file-label__text {
+	@include font-size(text);	
+	font-weight: bold;
+	color: rgba(255,255,255,0.8);
+	cursor: pointer;
+}
+
+.reveal__form--file {
+	position: relative;
+	height: 1px;
+	overflow: hidden;
+
+	input {
+		height: 50px;
+		position: absolute;
+		bottom: 0px;
+		margin: 0px !important;
+
+		&:focus, &:active {
+			outline: none;
 		}
 	}
 }
@@ -54,12 +114,13 @@ body.is-reveal-open {
 .reveal__form--button {
 	text-align: right;
 	@include scut-margin(rem-calc(50) n n n);
-	button {
+	button, input {
 		@include font-size(text);
 		@include scut-padding(0);
 		font-weight: bold;
 		background: transparent;
 		color: $white;
+		border: none;
 		&:hover {
 			background-color: transparent;
 		}

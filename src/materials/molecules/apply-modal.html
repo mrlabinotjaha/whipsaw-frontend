@@ -1,5 +1,12 @@
 <div class="reveal" id="exampleModal1" data-reveal data-close-on-click='false' >
 	<span class="reveal__close"><img src="{{image 'close-icon.png'}}" alt=""></span>
+
+  <div class="reveal__success">
+    <p>Thank you for your submission. The Whipsaw team will review your application and get back to you soon.</p>
+    <br>
+    <a href="/">Return to homepage</a>
+  </div>
+
 	<form class="reveal__form">
     <div class="reveal__form--input">
       <label>
@@ -41,8 +48,20 @@
         <input type="text" placeholder="How did you hear about this position?">
       </label>
     </div>
+    <div class="reveal__form--input">
+      <label class="reveal__form--file-label">
+        <span class="reveal__form--file-label__text">Resume/CV</span>
+        <br>
+          <div class="reveal__form--file">
+            <span class="wpcf7-form-control-wrap resume">
+              <input type="file" name="resume" size="40" class="wpcf7-form-control wpcf7-file wpcf7-validates-as-required" aria-required="true" aria-invalid="false">
+            </span>
+          </div>
+        <br>
+      </label>
+    </div>
     <div class="reveal__form--button">
-			<button class="button">Submit</button>
+			<input type="submit" value="Send">
     </div>
 	</form>
 </div>

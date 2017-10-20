@@ -1,0 +1,13 @@
+
+.centered-text {
+	@include section(small);
+	@include section-padding(big, true);
+
+	.content-group {
+		width: 100%;
+	}
+}
+
+.centered-text__inner {
+	@include grid-col(12);
+}

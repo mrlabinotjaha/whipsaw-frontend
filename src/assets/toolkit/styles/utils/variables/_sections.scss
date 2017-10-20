@@ -7,6 +7,7 @@ $section-spacing: (
 
 $section-padding: (
     smallx: 	( xxlg: rem-calc(30), xlg: rem-calc(20), lg: rem-calc(10), md: rem-calc(15), sm: rem-calc(30), min: rem-calc(0) ),
-    small: 		( xxlg: rem-calc(50), xlg: rem-calc(50), lg: rem-calc(50), md: rem-calc(40), sm: rem-calc(30), min: rem-calc(30) ),
-    medium: 	( xxlg: rem-calc(95), xlg: rem-calc(75), lg: rem-calc(55), md: rem-calc(35), sm: rem-calc(30), min: rem-calc(30) )
+    small: 		( xxlg: rem-calc(80), xlg: rem-calc(75), lg: rem-calc(55), md: rem-calc(35), sm: rem-calc(30), min: rem-calc(30) ),
+    medium: 	( xxlg: rem-calc(80), xlg: rem-calc(75), lg: rem-calc(55), md: rem-calc(35), sm: rem-calc(30), min: rem-calc(30) ),
+    big: 		( xxlg: rem-calc(200), xlg: rem-calc(160), lg: rem-calc(120), md: rem-calc(80), sm: rem-calc(30), min: rem-calc(30) )
 ) !default;

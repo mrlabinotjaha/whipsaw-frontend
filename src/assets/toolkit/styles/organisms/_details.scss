@@ -1,7 +1,7 @@
 
 .details {
 	@include section(small);
-	@include section-padding(medium, true);
+	@include section-padding(big, true);
 }
 
 .details__column {
@@ -10,7 +10,7 @@
 
 .details__title {
 	@include scut-margin(n n 1vw n);
-	@include font-size(title);
+	@include font-size(big-title);
 	line-height: 1.1;
 	color: color(black);	
 
