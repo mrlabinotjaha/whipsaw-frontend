@@ -1,0 +1,17 @@
+a {
+    position: relative;
+    display: inline-block!important;
+}
+a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #e80200;
+    transition: width .3s;
+}
+
+a:hover::after {
+    width: 100%;
+    //transition: width .3s;
+}

@@ -18,10 +18,16 @@
 
 .menu__item a {
 	@include scut-padding(n rem-calc(3));
+	@include scut-relative();
 	color: $black;
+	&:after {
+		@include scut-relative(rem-calc(10) n n n);
+	}
 }
 
 .menu__item--active a {
 	color: color(primary);
-	border-bottom: 2px solid color(primary);
+	&:after {
+		width: 100%;
+	}
 }
