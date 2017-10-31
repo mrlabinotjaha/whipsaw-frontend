@@ -1,15 +1,15 @@
 
 <div class="project-info {{#if light}}project-info--light{{/if}}">
 	{{#if category }}
-		<div class="project-info__category">{{default category "Work"}}</div>
+		<div class="project-info__category"><a class="no-effect" href="#">{{default category "Work"}}</a></div>
 	{{/if }}
-	<h2 class="project-info__title">
+	<h2 class="project-info__title"><a href="#">
 		
 		{{#if company }}
-			<strong class="project-info__company">{{default company "Google"}}</strong>
+			<strong class="project-info__company"><a href="#">{{default company "Google"}}</a></strong>
 		{{/if }}
 
 		{{default title "On Hub"}}
-	</h2>
+	</a></h2>
 	<p class="project-info__text {{#if big-text}}project-info__text--big{{/if}}">{{{default text "A wifi system built <br>for the future of <br>communication"}}}</p>
 </div>

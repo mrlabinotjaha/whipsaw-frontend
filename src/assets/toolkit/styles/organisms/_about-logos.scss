@@ -11,7 +11,9 @@
 	@include scut-relative();
 	height: 145px;
 	max-height: 145px;
-
+	a {
+		position: initial;
+	}
 	@include breakpoint(small only) {
 		@include grid-col(12);
 	}

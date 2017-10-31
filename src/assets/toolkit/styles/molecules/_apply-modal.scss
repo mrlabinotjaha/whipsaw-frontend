@@ -39,13 +39,14 @@ body.is-reveal-open {
 }
 
 .reveal__success {
-	color: white;
     max-width: 80%;
     font-size: 1.2rem;
+		color: white;
 
     a {
+			color: white;
     	font-size: 1rem;
-    	text-decoration: underline;
+    	text-decoration: none;
     }
 }
 
@@ -54,7 +55,7 @@ body.is-reveal-open {
 	input {
 		@include font-size(text);	
 		@include scut-padding(n 0);
-		font-weight: bold;
+		font-weight: normal;
 		background-color: transparent;
 		border: none;
 		border-bottom: 1px solid rgba(255,255,255,0.5);
@@ -89,7 +90,7 @@ body.is-reveal-open {
 
 .reveal__form--file-label__text {
 	@include font-size(text);	
-	font-weight: bold;
+	font-weight: normal;
 	color: rgba(255,255,255,0.8);
 	cursor: pointer;
 }
@@ -114,10 +115,13 @@ body.is-reveal-open {
 .reveal__form--button {
 	text-align: right;
 	@include scut-margin(rem-calc(50) n n n);
+	input {
+		border-bottom: 1px solid $white;
+	}
 	button, input {
 		@include font-size(text);
 		@include scut-padding(0);
-		font-weight: bold;
+		font-weight: normal;
 		background: transparent;
 		color: $white;
 		border: none;

@@ -5,9 +5,12 @@
 
 .project-info__category {
 	@include font-size(subtitle);
-	font-weight: bold;
+	font-weight: normal;
 	text-transform: uppercase;
 	margin-bottom: rem-calc(25);
+	a {
+		color: $black;
+	}
 }
 
 .project-info__title {

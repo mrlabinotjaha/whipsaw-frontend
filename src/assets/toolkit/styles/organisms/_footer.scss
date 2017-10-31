@@ -53,6 +53,9 @@
 		margin-bottom: rem-calc(18);
 		padding-left: 0px;
 		font-weight: normal;
+		a {
+			display: inline-block;
+		}
 	}
 
 	.menu__item--active a {

@@ -27,7 +27,5 @@
 
 .menu__item--active a {
 	color: color(primary);
-	&:after {
-		width: 100%;
-	}
+	background-size: 100% 100%;
 }

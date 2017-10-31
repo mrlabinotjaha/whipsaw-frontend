@@ -1,6 +1,5 @@
 .contact-form {
 	@include scut-margin(n n rem-calc(140) n);
-	height: 20vw;
 	min-height: 200px;
 	max-height: 300px;
 	&:last-child {
@@ -30,5 +29,12 @@
 	line-height: 1.25;
 	a {
 		color: color(black);
+	}
+}
+.contact-form__item-ul {
+	margin: 0;
+	list-style: none;
+	li {
+		text-transform: capitalize;
 	}
 }

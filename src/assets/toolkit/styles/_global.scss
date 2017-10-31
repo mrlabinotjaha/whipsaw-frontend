@@ -7,12 +7,25 @@ body {
 	position: relative;
 } 
 
-a {
-	color: inherit;
+a:not(.no-effect) {
+  color: #000;
+  @include scut-padding(rem-calc(7) n);
+  background-image: linear-gradient(180deg,transparent calc(100% - 2px),#e80200 0);
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  transition: background-size .4s ease;
 
 	&:hover, &:active, &:focus {
 		color: inherit;
+    outline: none;
+    background-size: 100% 100%;
 	}
+}
+
+a:hover::after {
+    width: 100%;
+    //transition: width .3s;
 }
 
 p {

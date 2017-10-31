@@ -7,15 +7,18 @@
 	outline: none;
 
 	button {
-		@include font-size(title);
-		font-weight: 400;
-		text-transform: uppercase;
+		@include font-size(medium-title);
+		font-weight: 300;
+		text-transform: capitalize;
 		padding: 0;
 		position: relative;
-		z-index: 60;
+		.work-filter__current {
+			text-decoration: underline;
+			color: $black;
+		}
 		&,&:focus, &:hover {
 			background: $white;
-			color: $black;
+			color: #999999;
 			outline: none;
 		}
 	}
@@ -25,24 +28,21 @@
 }
 .work-filter__reveal {
 	@include grid-row();
-	padding-top: 15rem;
 	outline: none;
 	opacity: 0;
 	display: none;
-	position: absolute;
+	position: fixed;
+	overflow-y: scroll;
 	top: 0;
 	bottom: 0;
 	right: 0;
 	left: 0;
-	background: $white;
+	background: $black;
 	z-index: 50;
-
-	@include breakpoint(large) {
-		padding-top: 17rem;
-	}
 }
 .work-filter__reveal_row {
-	@include grid-col(12);
+	@include grid-col(12, 0);
+	@include scut-padding(rem-calc(100) rem-calc(200));
 }
 .work-filter__ul {
 	@include section-padding(medium, true);
@@ -50,14 +50,19 @@
 	list-style: none;
 }
 .work-filter__li {
+	@include scut-margin(n n rem-calc(15) n);
 	a {
 		@include font-size(title);
+		color: $white;
 		font-weight: 300;
-		text-transform: uppercase;		
+		text-transform: capitalize;		
+		&:hover {
+			color: $white;
+		}
 	}
 	&.work-filter__li--active {
 		a {
-			color: #e80200;
+			color: #999;
 		}
 	}
 }

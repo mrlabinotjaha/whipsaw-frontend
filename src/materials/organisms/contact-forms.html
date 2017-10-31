@@ -19,10 +19,18 @@
 
 	<div class="contact-forms__item">
 		{{> contact-studio }}
+		{{> contact-studio no-title=true city="San Francisco" address="45 Valencia St. <br> San Francisco, CA 02130" number="408.297.9771"}}
 	</div>
 
 	<div class="contact-forms__item">
-		{{> contact-studio title="" city="San Francisco" address="45 Valencia St. <br> San Francisco, CA 02130" number="408.297.9771"}}
+		<div class="contact-form" data-effect>
+			<h2 class="contact-form__title">Follow </h2>
+			<ul class="contact-form__item-ul">
+				<li class="contact-form__text"><a href="#">linkedin</a></li>
+				<li class="contact-form__text"><a href="#">twitter</a></li>
+				<li class="contact-form__text"><a href="#">medium</a></li>
+			</ul>
+		</div>
 	</div>
 
 </div>

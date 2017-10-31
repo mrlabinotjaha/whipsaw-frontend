@@ -7,6 +7,12 @@
 
 	.project-info__category {
 		text-transform: capitalize;
+		a{color: $white;}
+	}
+	.project-info__company {
+		a {
+			color: $white;
+		}
 	}
 }
 

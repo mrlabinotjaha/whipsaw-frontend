@@ -27,6 +27,9 @@
 }
 .awards-form__product--ul {
 	@include flex-grid-column(6);
+	@include breakpoint(medium down) {
+		@include flex-grid-column(12);
+	}
 	h3 {
   	@include scut-margin(n n rem-calc(50) n);
 		@include font-size(title);

@@ -1,10 +1,15 @@
 .contact-studio {
-	@include scut-margin(n n rem-calc(140) n);
-	height: 20vw;
+	@include scut-margin(n);
 	min-height: 200px;
 	max-height: 300px;
 	&:last-child {
 		margin: 0px;
+	}
+	&.no-title {
+		@include scut-padding(rem-calc(40) n n n);
+		.contact-studio__title {
+			display: none;
+		}
 	}
 }
 
