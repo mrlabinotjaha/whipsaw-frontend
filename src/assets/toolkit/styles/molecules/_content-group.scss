@@ -23,9 +23,8 @@
 	
 	h3 {
 		@include scut-margin(n n rem-calc(20) n);
-		@include font-size(text);
+		@include font-size(medium-title);
 		line-height: 1.36;
-		border-bottom: 2px solid color(black);
 		display: inline-block;
 	}
 
