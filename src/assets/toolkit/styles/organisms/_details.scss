@@ -1,7 +1,7 @@
 
 .details {
 	@include section(small);
-	@include section-padding(big, true);
+	@include section-padding(xbig, true);
 }
 
 .details__column {
@@ -40,7 +40,7 @@
 }
 
 .details__text {
-	@include grid-col(10,0);
+	@include grid-col(12,0);
 	@include grid-col-end();
 	@include scut-margin(2vw n n n);
 	@include font-size(text-inner);

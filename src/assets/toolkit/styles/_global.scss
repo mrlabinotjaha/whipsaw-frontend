@@ -10,7 +10,7 @@ body {
 a {
   color: color(black);
 
-  &:hover {
+  &:hover, &:active, &:focus {
     color: color(black);
   }
 }

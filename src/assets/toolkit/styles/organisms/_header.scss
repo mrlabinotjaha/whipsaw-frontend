@@ -8,6 +8,10 @@
 
 .header__brand {
 	@include grid-col(3);
+	position: relative;
+	z-index: 100;
+	opacity: 1;
+	transition: .5s;
 
 	img {
 		width: 202px;
@@ -15,6 +19,10 @@
 	
 	@include breakpoint(medium down) {
 		@include grid-col(9);
+
+		img {
+			max-width: 80%;
+		}
 	}
 }
 
@@ -30,20 +38,23 @@
 	float: right;
 
 	@include breakpoint(medium down) {
-		@include scut-padding( rem-calc(43) rem-calc(80) 0 rem-calc(40) );
+		@include scut-padding( rem-calc(140) rem-calc(80) 0 rem-calc(35) );
 		@include scut-fixed( 0 0 0 0 );
 		
-		display: block;
 		background: $white;
 		z-index: 30;
-		max-height: 0px;
 		opacity: 0;
-		transition: .3s;
+		display: none;
 		overflow: hidden;
 
 		.menu__item a {
 			display: inline-block;
 		}
+	}
+
+	@include breakpoint(large) {
+		opacity: 1 !important;
+		display: flex !important;
 	}
 }
 
@@ -80,31 +91,24 @@
 
 .header__menu-toggle {
 	display: none;
+}
 
-	&:checked {
-		& ~ .header__menu {
-			max-height: 100vh;
-			opacity: 1;
+.menu-open {
+	@include breakpoint(medium down) {
+		.header__brand {
+			opacity: 0.5;
 		}
-		& ~ .header__menu-toggle-button {
-			position: fixed; 
-			right: 45px;
-			// top: 30px;
+		.header__menu-toggle-button {
+			z-index: 100;
 
 			span:nth-child(1) {
-				opacity: 1;
-				transform: rotate(45deg);
-				top: 50%;
+				opacity: 0
 			}
 			span:nth-child(2) {
-				opacity: 0;
-				top: 50%;
-				max-width: 0px;
+				opacity: 0.5;
 			}
 			span:nth-child(3) {
-				opacity: 1;
-				transform: rotate(-45deg);
-				top: 50%;
+				opacity: 0
 			}
 		}
 	}

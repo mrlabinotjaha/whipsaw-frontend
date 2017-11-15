@@ -21,6 +21,7 @@ require('./foundation.js');
 
 // Components
 require('./components/effects.js');
+require('./components/mobile-menu.js');
 require('./components/works.js');
 require('./components/file-input.js');
 

@@ -41,8 +41,8 @@
 	z-index: 50;
 }
 .work-filter__reveal_row {
-	@include grid-col(12, 0);
-	@include scut-padding(rem-calc(100) rem-calc(200));
+	@include grid-row();
+	@include scut-padding(rem-calc(100) n);
 }
 .work-filter__ul {
 	@include section-padding(medium, true);
@@ -50,7 +50,12 @@
 	list-style: none;
 }
 .work-filter__li {
-	@include scut-margin(n n rem-calc(15) n);
+	@include scut-margin(n rem-calc(15) rem-calc(15) rem-calc(15));
+	
+	@include breakpoint(xxlarge) {
+		@include scut-margin(n rem-calc(25) n rem-calc(25));
+	}
+
 	a {
 		@include font-size(title);
 		color: $white;

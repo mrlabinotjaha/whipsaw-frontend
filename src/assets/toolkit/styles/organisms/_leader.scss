@@ -5,7 +5,11 @@
 }
 
 .leader--big-padding {
-	@include section-padding(big, true);
+	@include section-padding(xbig, true);
+	.leader__content {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
 }
 .leader--big-font {
 	.leader__text {

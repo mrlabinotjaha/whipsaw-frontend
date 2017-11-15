@@ -9,8 +9,12 @@
 		text-transform: capitalize;
 		a{color: $white;}
 	}
-	.project-info__title {
+	.project-info__title a {
 		color: $white;
+
+		&:hover, &:active, &:focus {
+			color: color(white);
+		}
 	}
 	.project-info__company {
 		a {
@@ -30,6 +34,29 @@
 	background-image: url('../images/test.png');
 	background-size: cover;
 	background-position: center;
+}
+
+.hero__container--dark {
+	.project-info__category a {
+		color: color(black);
+
+		&:hover, &:active, &:focus {
+			color: color(black);
+		}
+	}
+	.project-info__title {
+		&, a {
+			color: color(black);
+
+			&:hover, &:active, &:focus {
+				color: color(black);
+			}
+		}
+	}
+
+	.project-info__text {
+		color: color(grey);
+	}
 }
 
 .hero__content {

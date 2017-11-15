@@ -47,7 +47,6 @@
 .horizontal-block__title {
 	@include scut-margin(n n rem-calc(40) n);
 	@include font-size(title);
-	font-weight: bold;
 	line-height: 1.1;
 }
 
