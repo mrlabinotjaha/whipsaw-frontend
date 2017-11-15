@@ -4,6 +4,15 @@
 	@include scut-relative();
 }
 
+.leader--big-padding {
+	@include section-padding(big, true);
+}
+.leader--big-font {
+	.leader__text {
+		@include font-size(leader-big);
+	}
+}
+
 .leader__content {
 	@include flex-grid-row();
 	@include scut-relative();

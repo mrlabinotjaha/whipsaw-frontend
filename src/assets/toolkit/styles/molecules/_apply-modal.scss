@@ -120,13 +120,12 @@ body.is-reveal-open {
 	}
 	button, input {
 		@include font-size(text);
-		@include scut-padding(0);
+		@include scut-padding(6px 0px);
 		font-weight: normal;
 		background: transparent;
 		color: $white;
 		border: none;
-		&:hover {
-			background-color: transparent;
-		}
+		border-bottom: 1px solid rgba(255,255,255,0.5);
+		
 	}
 }

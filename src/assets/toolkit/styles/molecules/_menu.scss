@@ -20,12 +20,17 @@
 	@include scut-padding(n rem-calc(3));
 	@include scut-relative();
 	color: $black;
+	transition: color 0.3s ease;
 	&:after {
 		@include scut-relative(rem-calc(10) n n n);
+	}
+
+	&:hover {
+		color: color(primary);
 	}
 }
 
 .menu__item--active a {
 	color: color(primary);
-	background-size: 100% 100%;
+	border-bottom: 2px solid color(primary);
 }

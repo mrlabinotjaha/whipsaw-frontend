@@ -12,15 +12,6 @@
 			clear: left;
 		}
 	}
-	a {
-		&:hover, &:active, &:focus {
-			.small-block__span--title {
-				color: inherit;
-		    outline: none;
-		    background-size: 100% 100%;
-		  }
-		}
-	}
 	@include breakpoint(medium only) {
 		@include grid-col(6);
 		@include grid-col-end();
@@ -51,11 +42,6 @@
 .small-block__span--title {
 	@include scut-padding(rem-calc(2) n);
 	display: inline;
-	background-image: linear-gradient(180deg,transparent calc(100% - 2px),#e80200 0);
-  background-size: 0 100%;
-  background-repeat: no-repeat;
-  text-decoration: none;
-  transition: background-size .4s ease;
 }
 
 .small-block__title {

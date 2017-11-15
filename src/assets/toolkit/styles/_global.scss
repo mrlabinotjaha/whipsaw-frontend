@@ -7,21 +7,43 @@ body {
 	position: relative;
 } 
 
-a:not(.no-effect) {
-  color: #000;
-  @include scut-padding(rem-calc(7) n);
-  background-image: linear-gradient(180deg,transparent calc(100% - 2px),#e80200 0);
-  background-size: 0 100%;
-  background-repeat: no-repeat;
-  text-decoration: none;
-  transition: background-size .4s ease;
+a {
+  color: color(black);
 
-	&:hover, &:active, &:focus {
-		color: inherit;
-    outline: none;
-    background-size: 100% 100%;
-	}
+  &:hover {
+    color: color(black);
+  }
 }
+
+// a:not(.no-effect) {
+//   color: #000;
+//   background-image: linear-gradient(180deg,transparent calc(100% - 2px),#e80200 0);
+//   background-size: 0 100%;
+//   background-repeat: no-repeat;
+//   text-decoration: none;
+//   transition: background-size .4s ease;
+
+// 	&:hover, &:active, &:focus {
+// 		color: inherit;
+//     outline: none;
+//     background-size: 100% 100%;
+// 	}
+// }
+
+// .effect-hover {
+//   .effect-elem {
+//     background-image: linear-gradient(180deg,transparent calc(100% - 2px),#e80200 0);
+//     background-size: 0 100%;
+//     background-repeat: no-repeat;
+//     text-decoration: none;
+//     transition: background-size .4s ease;
+//   }
+
+//   &:hover .effect-elem, &:active .effect-elem, &:focus .effect-elem {
+//     outline: none;
+//     background-size: 100% 100%;
+//   }
+// }
 
 a:hover::after {
     width: 100%;

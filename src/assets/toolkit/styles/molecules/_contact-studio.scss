@@ -37,7 +37,6 @@
 .contact-studio__address {
 	@include scut-margin(n n rem-calc(22) n);
 	@include font-size(text);
-	font-weight: bold;
 	line-height: 1.25;
 	a {
 		color: color(black);

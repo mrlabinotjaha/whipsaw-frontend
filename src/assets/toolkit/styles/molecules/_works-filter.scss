@@ -27,6 +27,7 @@
 }
 .work-filter__reveal {
 	@include grid-row();
+	max-width: 1000000px;
 	outline: none;
 	opacity: 0;
 	display: none;

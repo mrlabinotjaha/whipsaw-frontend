@@ -1,7 +1,5 @@
 .contact-form {
 	@include scut-margin(n n rem-calc(140) n);
-	min-height: 200px;
-	max-height: 300px;
 	&:last-child {
 		margin: 0px;
 	}
@@ -15,7 +13,6 @@
 .contact-form__text {
 	@include scut-margin(n n rem-calc(25) n);
 	@include font-size(text);
-	font-weight: bold;
 	line-height: 1.25;
 	a {
 		color: color(black);
@@ -25,7 +22,6 @@
 .contact-form__subtext {
 	@include scut-margin(n n rem-calc(40) n);
 	@include font-size(text);
-	font-weight: bold;
 	line-height: 1.25;
 	a {
 		color: color(black);

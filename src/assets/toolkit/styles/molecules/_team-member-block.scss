@@ -11,15 +11,6 @@
 		&:nth-child(3n+1) {
 			clear: left;
 		}
-		a {
-			&:hover, &:active, &:focus {
-			.team-member-block__name {
-					color: inherit;
-			    outline: none;
-			    background-size: 100% 100%;
-			  }
-			}
-		}
 	}
 
 	@include breakpoint(medium only) {
@@ -54,13 +45,8 @@
 }
 
 .team-member-block__name{
-		@include scut-padding(rem-calc(2) n);
+	@include scut-padding(rem-calc(2) n);
 	display: inline;
-	background-image: linear-gradient(180deg,transparent calc(100% - 2px),#e80200 0);
-  background-size: 0 100%;
-  background-repeat: no-repeat;
-  text-decoration: none;
-  transition: background-size .4s ease;
 }
 .team-member-block__details {
 	@include font-size(small-title);

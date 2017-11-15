@@ -7,8 +7,30 @@
 
 .contact-forms__item {
 	@include grid-col(6);
+	@include grid-col-end();
+	min-height: 270px;
 
 	@include breakpoint(small only) {
 		@include grid-col(12);
+		min-height: initial;
+		margin-bottom: 80px;
+	}
+
+
+	a {
+		background-image: linear-gradient(180deg,transparent calc(100% - 1.5px),#e80200 0), linear-gradient(180deg,transparent calc(100% - 1.5px),#000 0);
+		background-size: 0 100%, 100% 100%;
+		background-repeat: no-repeat;
+		text-decoration: none;
+		color: color(black);
+		transition: background-size .4s ease, color .4s ease;
+		padding-bottom: 3px;
+		line-height: 1.4em;
+
+		&:hover, &:active, &:focus {
+			color: #e80200;
+			outline: none;
+			background-size: 100% 100%, 100% 100%;
+		}
 	}
 }

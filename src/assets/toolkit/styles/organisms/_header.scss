@@ -8,6 +8,10 @@
 
 .header__brand {
 	@include grid-col(3);
+
+	img {
+		width: 202px;
+	}
 	
 	@include breakpoint(medium down) {
 		@include grid-col(9);
