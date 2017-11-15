@@ -7,9 +7,8 @@
 	outline: none;
 
 	button {
-		@include font-size(medium-title);
+		@include font-size(small-title);
 		font-weight: 300;
-		text-transform: capitalize;
 		padding: 0;
 		position: relative;
 		.work-filter__current {
