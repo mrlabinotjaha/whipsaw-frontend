@@ -60,6 +60,6 @@
 
 .small-block__title {
 	@include section-padding(smallx, true);
-	@include font-size(text);
+	@include font-size(small-title);
 	margin-top: rem-calc(50);
 }
