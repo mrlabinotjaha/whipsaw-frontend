@@ -1,5 +1,5 @@
 
-<div class="project-info {{#if light}}project-info--light{{/if}}">
+<div class="project-info {{classes}}{{#if mobile}} project-info--mobile {{/if}} {{#if light}}project-info--light {{/if}}">
 	{{#if category }}
 		<div class="project-info__category"><a class="no-effect" href="#">{{default category "Work"}}</a></div>
 	{{/if }}
