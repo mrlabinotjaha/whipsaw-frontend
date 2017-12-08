@@ -1,14 +1,14 @@
 featured_items:
-  - image: "ProductFeaturedItem1.jpg" 
+  - image: "http://localhost/whipsaw/wp-content/uploads/2017/08/TeamMemberBig-600x520.jpg" 
     company: "Blumio" 
     title: "Blood Pressure Monitor" 
     text: "Blumio uses digital radar technology instead of the conventional air pump cuff. Bouncing radar waves off of arteries offers many advantages."
-  - image: "ProductFeaturedItem2.jpg" 
+  - image: "http://localhost/whipsaw/wp-content/uploads/2017/08/TeamMemberBig-600x520.jpg" 
     company: "Google" 
     title: "WiFi Router" 
     text: "WiFi is a mesh router (multiple linked routers) used to get a strong Wi-Fi signal in every corner of your house, paired with OnHub."
     right: true
-  - image: "ProductFeaturedItem3.jpg" 
+  - image: "http://localhost/whipsaw/wp-content/uploads/2017/08/TeamMemberBig-600x520.jpg" 
     company: "Arris" 
     title: "Hub. X Router" 
     text: "Blumio uses digital radar technology instead of the conventional air pump cuff. Bouncing radar waves off of arteries offers many advantages."

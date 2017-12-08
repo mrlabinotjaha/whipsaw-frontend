@@ -3,7 +3,7 @@ var $ = require('jquery');
 
 $(function(){
 
-	var elements = $("*[data-effect");
+	var elements = $("*[data-effect]");
 
 	$(window).on('scroll', function() {
 		var scrollTop = $(window).scrollTop();

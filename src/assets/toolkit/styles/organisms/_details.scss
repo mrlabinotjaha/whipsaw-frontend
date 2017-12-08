@@ -46,6 +46,11 @@
 	@include font-size(text-inner);
 	line-height: 1.36;
 
+	img {
+		margin: 20px 0;
+		width: 100%;
+	}
+
 	@include breakpoint(small only) {
 		@include grid-col(12,0);
 		@include grid-col-end();
@@ -61,12 +66,24 @@
 	@include grid-col(12,0);
 	@include scut-margin(rem-calc(70) n n n);
 	h1 {
-		@include font-size(title);
-		font-weight: bold;
+		@include font-size(text);
 		line-height: 1.1;
 		margin: 0px;
 		a {
 			color: color(black);
+
+			background-image: linear-gradient(180deg,transparent calc(100% - 1.5px),#e80200 0), linear-gradient(180deg,transparent calc(100% - 1.5px),#000 0);
+			background-size: 0 100%, 100% 100%;
+			background-repeat: no-repeat;
+			text-decoration: none;
+			transition: background-size .4s ease, color .4s ease;
+			padding-bottom: 3px;
+
+			&:hover, &:active, &:focus {
+				color: #e80200;
+				outline: none;
+				background-size: 100% 100%, 100% 100%;
+			}
 		}
 	}
 }

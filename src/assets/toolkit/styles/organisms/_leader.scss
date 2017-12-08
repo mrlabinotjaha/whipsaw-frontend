@@ -25,6 +25,10 @@
 
 }
 
+.leader__content--less-space + * {
+	margin-top: -11vw;
+}
+
 .leader__text {
 	@include grid-col(12);
 	@include font-size(leader);

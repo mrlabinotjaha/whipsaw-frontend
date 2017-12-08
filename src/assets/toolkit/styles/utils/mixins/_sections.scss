@@ -6,6 +6,12 @@
 		@include section-margin( $size );
 	}
 
+    @at-root {
+        .page-builder & {
+            @include section-margin( xsmall );
+        }
+    }
+
 	&.no-space {
 		margin-bottom: 0px;
 	} 

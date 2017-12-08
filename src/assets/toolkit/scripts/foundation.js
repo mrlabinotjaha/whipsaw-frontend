@@ -94,8 +94,8 @@ Foundation.plugin(Reveal, 'Reveal');
 // import { Toggler } from '../../vendor/foundation-sites/js/foundation.toggler';
 // Foundation.plugin(Toggler, 'Toggler');
 
-// import { Tooltip } from '../../vendor/foundation-sites/js/foundation.tooltip';
-// Foundation.plugin(Tooltip, 'Tooltip');
+import { Tooltip } from '../../vendor/foundation-sites/js/foundation.tooltip';
+Foundation.plugin(Tooltip, 'Tooltip');
 
 // import { ResponsiveAccordionTabs } from '../../vendor/foundation-sites/js/foundation.responsiveAccordionTabs';
 // Foundation.plugin(ResponsiveAccordionTabs, 'ResponsiveAccordionTabs');
