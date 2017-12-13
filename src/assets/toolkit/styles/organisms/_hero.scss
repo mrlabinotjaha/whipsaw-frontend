@@ -14,16 +14,17 @@
 	}
 
 	.project-info__title a {
-		color: $white;
-
-		&:hover, &:active, &:focus {
-			color: color(white);
-		}
-	}
-	
-	.project-info__company {
-		a {
 			color: $white;
+
+			&:hover, &:active, &:focus {
+				color: color(white);
+			}
+		
+
+		.project-info__company {
+			a {
+				color: $white;
+			}
 		}
 	}
 }
