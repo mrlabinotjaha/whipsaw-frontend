@@ -56,6 +56,22 @@
 		@include grid-col-end();
 		@include scut-margin(rem-calc(30) n n n);
 	}
+
+	a {
+		background-image: linear-gradient(180deg,transparent calc(100% - 1.5px),#e80200 0), linear-gradient(180deg,transparent calc(100% - 1.5px),#000 0);
+		background-size: 0 100%, 100% 100%;
+		background-repeat: no-repeat;
+		text-decoration: none;
+		color: color(black);
+		transition: background-size .4s ease, color .4s ease;
+		padding-bottom: 3px;
+
+		&:hover, &:active, &:focus {
+			color: #e80200;
+			outline: none;
+			background-size: 100% 100%, 100% 100%;
+		}
+	}
 }
 
 .details__info {

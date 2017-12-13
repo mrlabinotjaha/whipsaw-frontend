@@ -55,7 +55,9 @@
 	}
 
 	.project-info__text {
-		color: color(grey);
+		&, p {
+			color: #383838;
+		}
 	}
 }
 
