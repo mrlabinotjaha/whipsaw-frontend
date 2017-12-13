@@ -42,19 +42,27 @@
 }
 
 .project-info--mobile {
-	@include section-padding(big, true);
+	@include section-padding(small, true);
+
 	display: none;
 	position: inherit;
 	width: 100%;
-	margin-top: 4vw;
+	margin-top: rem-calc(40);
+
 	@include breakpoint(700px down) {
-  	display: initial;
+  		display: initial;
 	}
+
+	br {
+		display: none;
+	}
+
 	.project-info__category {
 		a {
 			color: #000!important;
 		}
 	}
+
 	.project-info__title {
 		color: #000!important;
 		a {

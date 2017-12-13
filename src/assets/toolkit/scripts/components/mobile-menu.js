@@ -5,20 +5,34 @@ $(function(){
 
 	var menu = $('.header__menu');
 
-	$('.header__menu-toggle').on('click', function(){
-		$('body').toggleClass('menu-open');
+	menu.on('click', function(e){
+		if( !$(e.target).is('a') && !$(e.target).parents('a').length ) {
+			closeMenu();
+		}
+	})
 
-		if( $('body').hasClass('menu-open') ) {
-			menu.stop().show().animate({
-				opacity: 1
-			});
+	$('.header__menu-toggle').on('click', function(){
+		if( !$('body').hasClass('menu-open') ) {
+			openMenu();
 		} else {
-			menu.stop().animate({
-				opacity: 0
-			}, function() {
-				menu.hide();
-			});
+			closeMenu();
 		}
 	});
+
+	function openMenu() {
+		$('body').addClass('menu-open');
+		menu.stop().show().animate({
+			opacity: 1
+		});
+	}
+
+	function closeMenu() {
+		$('body').removeClass('menu-open');
+		menu.stop().animate({
+			opacity: 0
+		}, function() {
+			menu.hide();
+		});
+	}
 
 });

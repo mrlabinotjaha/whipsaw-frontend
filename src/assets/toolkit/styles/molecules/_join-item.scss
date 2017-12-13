@@ -2,7 +2,7 @@
 .join-item {
 	@include grid-col(10,0);
 	@include grid-col-end();
-	@include scut-margin(n n 8vw n);
+	@include scut-margin(n n 4vw n);
 
 	&:last-child {
 		margin: 0px;
@@ -16,7 +16,7 @@
 }
 
 .join-item__title {
-	@include font-size(title);
+	@include font-size(medium-title);
 }
 
 .join-item__text {

@@ -1,5 +1,7 @@
 <ul class="menu {{classes}}">
-	<img class="logo" src="{{image 'white-logo.png'}}" >
+	<a href="#" class="menu__logo-link">
+		<img class="menu__logo" src="{{image 'white-logo.png'}}">
+	</a>
 	{{#each items }}
 	<li class="menu__item {{#if this.active}}menu__item--active{{/if}}">
 		<a href="#">{{this.name}}</a>

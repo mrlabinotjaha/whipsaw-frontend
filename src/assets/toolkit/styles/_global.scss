@@ -11,6 +11,7 @@ a {
   color: color(black);
 
   &:hover, &:active, &:focus {
+    outline: none;
     color: color(black);
   }
 }
