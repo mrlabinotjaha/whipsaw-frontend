@@ -35,6 +35,34 @@
 	line-height: 1.16;
 }
 
+.project-info--desktop {
+	@include breakpoint(700px down) {
+  	display: none; 
+  }
+}
+
+.project-info--mobile {
+	@include section-padding(big, true);
+	display: none;
+	position: inherit;
+	width: 100%;
+	margin-top: 4vw;
+	@include breakpoint(700px down) {
+  	display: initial;
+	}
+	.project-info__category {
+		a {
+			color: #000!important;
+		}
+	}
+	.project-info__title {
+		color: #000!important;
+		a {
+			color: #000!important;
+		}
+	}
+}
+
 .project-info--light {
 	color: $white;
 

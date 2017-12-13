@@ -4,21 +4,27 @@
 	position: relative;
 	padding-top: 56%;
 	min-height: 300px;
+	@include breakpoint(700px down) {
+		margin-bottom: 250px;
+	}
 
 	.project-info__category {
 		text-transform: capitalize;
 		a{color: $white;}
 	}
-	.project-info__title a {
-		color: $white;
 
-		&:hover, &:active, &:focus {
-			color: color(white);
-		}
-	}
-	.project-info__company {
-		a {
+	.project-info__title a {
 			color: $white;
+
+			&:hover, &:active, &:focus {
+				color: color(white);
+			}
+		
+
+		.project-info__company {
+			a {
+				color: $white;
+			}
 		}
 	}
 }
