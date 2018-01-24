@@ -15,7 +15,7 @@
 		position: initial;
 	}
 	@include breakpoint(small only) {
-		@include grid-col(12);
+		@include grid-col(6);
 	}
 	img {
 		@include scut-center-transform();

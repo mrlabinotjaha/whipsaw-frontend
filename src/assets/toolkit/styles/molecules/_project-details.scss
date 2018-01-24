@@ -19,10 +19,18 @@
 .project-details__label {
 	@include grid-col(2, 0);
 	width: 190px;
+
+	@include breakpoint(small only) {
+		width: 100px;
+	}
 }
 
 .project-details__value {
 	@include grid-col(8, 0);
 	@include grid-col-end();
 	width: calc( 100% - 190px );
+
+	@include breakpoint(small only) {
+		width: calc( 100% - 100px );	
+	}
 }

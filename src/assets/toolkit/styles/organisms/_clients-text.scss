@@ -1,6 +1,10 @@
 .clients {
 	@include section( small );
 	@include scut-relative();
+
+	@include breakpoint(small down) {
+		@include scut-margin(0);
+	}
 }
 
 .clients__content {

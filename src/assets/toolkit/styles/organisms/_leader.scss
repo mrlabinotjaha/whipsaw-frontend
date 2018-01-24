@@ -22,6 +22,9 @@
 	@include scut-relative();
 	@include section-padding(small, true);
 	min-height: 30vw;
+	@include breakpoint(small down) {
+		@include scut-margin(rem-calc(15) n n n );
+	}
 
 }
 

@@ -16,7 +16,11 @@
 	@include breakpoint(medium down) {
 		@include grid-col(6);
 	}
+	@include breakpoint(small down) {
+		height: 150px;
+	}
 	img {
 		@include scut-center-transform();
 	}
 }
+

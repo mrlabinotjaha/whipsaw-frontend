@@ -21,6 +21,14 @@
 	@include scut-padding( rem-calc(9) rem-calc(0) );
 	@include font-size(text);
 	height: rem-calc(60);
+		
+	@include breakpoint(small only) {
+		@include scut-margin(n n rem-calc(60) n);
+	}
+
+	@include breakpoint(420px down) {
+		font-size: rem-calc(16);
+	}
 
 	&, &:focus { 
 		border: none;
@@ -45,6 +53,10 @@
 	text-transform: capitalize;
 	cursor: pointer;
 	transition: opacity 0.2s;
+		
+	@include breakpoint(small only) {
+		@include scut-absolute(rem-calc(80) rem-calc(0) n n);
+	}
 
 	&:hover {
 		opacity: 0.8;

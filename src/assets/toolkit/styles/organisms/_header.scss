@@ -2,8 +2,8 @@
 .header {
 	@include section('none');
 	@include section-padding(small, true);
-	margin-top: rem-calc(45);
-	margin-bottom: rem-calc(20);
+	margin-top: rem-calc(41);
+	margin-bottom: rem-calc(30);
 }
 
 .header__brand {
@@ -14,6 +14,7 @@
 
 	img {
 		width: 202px;
+		transform: scale(1.12) translateY(-10px);
 	}
 	
 	@include breakpoint(medium down) {
